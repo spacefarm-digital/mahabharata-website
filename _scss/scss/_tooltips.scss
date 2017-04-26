@@ -18,13 +18,12 @@
 
 // Body
 	&:after {
-		background: $grey-3;
+		background: $brown-4;
 		@extend .white;
 		@extend .fw6;
 		@extend .f5;
 		@extend .nowrap;
 		@extend .br1;
-		@extend .shadow;
 		padding: .375rem .75rem;
 	}
 	&[aria-label]:after {

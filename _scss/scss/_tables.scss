@@ -13,7 +13,7 @@ th:not(:first-child), td:not(:first-child) {
 }
 
 th {
-  @extend .grey-3;
+  @extend .blue-3;
   @extend .fw6;
   @extend .nowrap;
   @include lg {

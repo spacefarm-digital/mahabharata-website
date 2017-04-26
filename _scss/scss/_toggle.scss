@@ -7,7 +7,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   // toggle-spefic focuc state
   .a11y &:focus + label::after {
-    background-color: $highlight;
+    background-color: $blue-1;
     opacity: .75;
   }
 }
@@ -28,8 +28,7 @@
   @extend .absolute;
   @extend .top-0;
   @extend .left-0;
-  @extend .grey-1;
-  @extend .bg-grey-1;
+  @extend .blue-2;
   @extend .tc;
   @extend .b--solid;
   @extend .bw1;
@@ -44,10 +43,10 @@
   @extend .w-36px;
   @extend .h-36px;
   @extend .br-100;
-  @extend .bg-white;
+  bacground-color: $white;
   @extend .animation-transition;
   @extend .b--solid;
-  @extend .grey-1;
+  @extend .blue-1;
   @extend .bw1;
 }
 
@@ -55,14 +54,14 @@
 .toggle:checked + label:after {
   transform: translateX(28px) translateZ(0);
   transition: $animation-transition;
-  @extend .b-brand;
+  border-color: $blue-2;
   transition-delay: .15s;
   -webkit-transition-delay: .15s;
 }
 
 .toggle:checked + label:before {
   border-width: 18px;
-  @extend .b-brand;
+  border-color: $blue-2;
 }
 
 .toggle:disabled {

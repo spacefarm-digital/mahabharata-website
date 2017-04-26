@@ -59,7 +59,7 @@
       font-size: .75rem;
       top: .25rem;
       position: absolute;
-      color: $brand;
+      color: $blue-1;
     }
   }
 
@@ -74,7 +74,7 @@
       height: 100%;
       content: counter(i);
       counter-increment: i;
-      color: $brand;
+      color: $blue-1;
     }
 	}
 
@@ -87,8 +87,7 @@
     font-weight: 700;
     font-size: 1.25rem;
     @extend .mv3;
-    @extend .shadow;
-    @extend .brand;
+    @extend .blue-2;
     p {
       margin: 0;
     }

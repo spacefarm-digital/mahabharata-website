@@ -1,27 +1,21 @@
 // COLORS
 
 // Neutrals
-$white: rgba(255, 255, 255, 1);
-$off-white: rgba(245, 247, 250, 1);
-$grey-1: rgba(220, 225, 229, 1);
-$grey-2: rgba(99, 115, 133, 1);
-$grey-3: rgba(71, 80, 89, 1);
-$black: rgba(31, 34, 38, 1);
-$midnight: rgba(23, 40, 59, 1);
+$white: #fff;
+$off-white: #FFFCF7;
+$brown-1: #FAF3E3;
+$brown-2: #F5E9D0;
+$brown-3: #BFAF8F;
+$brown-4: #665229;
+// Golds
+$gold-1: #EACE8C;
+$gold-2: #D4A73F;
+// Blues
+$blue-1: #73B9FF;
+$blue-2: #297ACC;
+$blue-3: #0F2E4D;
 
-// Brand
-$brand: rgba(8, 123, 255, 1);
-$brand-text: rgba(6, 99, 204, 1);
-$brand-light: rgba(206, 229, 248, 1);
-$red: rgba(227, 7, 44, 1);
-$green: rgba(76, 242, 61, 1);
-$highlight: rgba(178, 215, 255, 1);
-
-//OTHER
-$shadow: 0 0 2px 0 rgba(34, 36, 38, .03), 0 4px 8px 0 rgba(34, 36, 38, .04);
-$shadow-hover: 0 0 10px 0 rgba(20, 22, 26, .09), 0 4px 8px 0 rgba(20, 22, 26, .05);
-
-//TRANSITIONS
+// TRANSITIONS
 $hover-transition: all 150ms ease;
 $animation-transition: all 300ms cubic-bezier(.5, .1, 0, 1);
 $bouncy-transition: all 300ms cubic-bezier(.5, .1, 0, 1.2);

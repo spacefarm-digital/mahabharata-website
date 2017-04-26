@@ -1,19 +1,28 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
+  @include md {
+    font-size: 20px;
+  }
+  @include lg {
+    font-size: 22px;
+  }
+  @include xl {
+    font-size: 24px;
+  }
 }
 
 body {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $black;
+  color: $blue-3;
   background-color: $off-white;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif, roboto, avenir next, avenir,  helvetica, helvetica neue,  ubuntu, noto, segoe ui, arial;
+  font-family: 'Alice', serif;
 }
 
 ::selection {
-  background-color: $highlight;
+  background-color: $blue-1;
 }
 
 p {

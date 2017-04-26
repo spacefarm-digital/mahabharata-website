@@ -1,14 +1,12 @@
 .nice-select {
-  @extend .bg-white;
+  background-color: $white;
   @extend .fw5;
   @extend .br1;
   @extend .b--solid;
   ;
   @extend .bw1;
-  @extend .b-white;
-  @extend .shadow;
+  border-color: $white;
   @extend .tl;
-  @extend .states-shadow;
   @extend .db;
   @extend .mw5;
   @extend .pointer;
@@ -21,8 +19,8 @@
   &:after {
     content: '';
     @extend .animation-transition;
-    border-bottom: 2px solid $grey-3;
-    border-right: 2px solid $grey-3;
+    border-bottom: 2px solid $brown-4;
+    border-right: 2px solid $brown-4;
     @extend .db;
     height: 7.5px;
     margin-top: -6px;
@@ -52,8 +50,8 @@
 
   // List and options
   .list {
-    @extend .bg-white;
-    @extend .black;
+    bacground-color: $white;
+    @extend .blue-3;
     @extend .br1;
     @extend .o-0;
     @extend .overflow-hidden;
@@ -65,8 +63,6 @@
     @extend .z-2;
     width: auto;
     min-width: 16rem;
-    @extend .shadow;
-    @extend .states-shadow;
     transition: $animation-transition;
     transform-origin: 50% 0%;
     @extend .up-1rem;

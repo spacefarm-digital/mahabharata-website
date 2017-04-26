@@ -17,7 +17,7 @@
 
 .separator {
   li:not(:last-child) {
-    border-bottom: 1px solid $grey-1;
+    border-bottom: 1px solid $brown-1;
   }
 }
 
@@ -41,7 +41,7 @@
       transform: translate(-28px, -50%);
 
       border-radius: 2px;
-      background-color: $grey-2;
+      background-color: $brown-2;
   }
   &:after
   {
@@ -59,7 +59,7 @@
       transform: translate(28px, -50%);
 
       border-radius: 2px;
-      background-color: $grey-2;
+      background-color: $brown-2;
   }
 }
 
@@ -74,7 +74,7 @@
     @extend .w-100;
     @extend .h-100;
     @extend .absolute;
-    background-color: $brand;
+    background-color: $blue-1;
     @extend .white;
     @extend .fw5;
     @extend .z-2;
@@ -86,7 +86,7 @@
     @extend .pointer;
     @extend .states-bg;
     &:hover {
-      background-color: $brand;
+      background-color: $blue-1;
     }
     label {
       position: absolute;

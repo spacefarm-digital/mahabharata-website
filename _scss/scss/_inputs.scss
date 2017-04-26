@@ -5,13 +5,13 @@ fieldset
 
 .input {
   padding: .375rem .75rem;
-  border: 3px solid $grey-1;
-  @extend .bg-white;
+  border: 3px solid $brown-1;
+  bacground-color: $white;
   @extend .lh-copy;
   @extend .br1;
   @extend .fw5;
   @extend .hover-transition;
-  color: $black;
+  color: $blue-3;
   -webkit-appearance: none;
 
   &::placeholder {
@@ -19,7 +19,7 @@ fieldset
   }
 
   &:focus {
-    @extend .b-brand;
+    border-color: $blue-2;
     box-shadow: none;
   }
 
@@ -37,7 +37,6 @@ fieldset
 
 .input + label
 {
-  @extend .brand-text;
   position: absolute;
   top: -.6rem;
   margin-left: .65rem;
@@ -45,18 +44,9 @@ fieldset
   @extend .fw7;
   left: 0;
   opacity: 0;
-  @extend .bg-white;
+  bacground-color: $white;
   @extend .ph2;
   pointer-events: none;
   transform: translateY(1rem) translateZ(0);
   @extend .animation-transition;
 }
-
-// Validation front-end
-// input, textarea {
-//   &:not(:focus) {
-//     &:invalid {
-//       @extend .b-red;
-//     }
-//   }
-// }

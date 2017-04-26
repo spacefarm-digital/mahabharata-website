@@ -4,7 +4,7 @@
   cursor: pointer;
   letter-spacing: 0.0375rem;
   @extend .br1;
-  color: #fff;
+  color: $blue-3;
   border: 3px solid;
   @extend .no-underline;
   @extend .fw7;
@@ -19,7 +19,7 @@
 }
 
 .ghost-btn {
-  @extend .bg-white;
+  bacground-color: $white;
   &:hover {
     opacity: .75;
   }

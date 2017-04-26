@@ -5,7 +5,7 @@
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
   &:checked + label {
-    background-color: rgba($grey-1, .5);
+    background-color: rgba($brown-1, .5);
   }
 }
 
@@ -18,7 +18,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   // checkbox-spefic focus state
   .a11y &:focus + label::before {
-    box-shadow: 0 0 0 3px $highlight;
+    box-shadow: 0 0 0 3px $blue-1;
     opacity: .75;
   }
 }
@@ -34,18 +34,18 @@
 /* checkbox aspect */
 .checkbox + label:before {
   content: '';
-  @extend .bg-white;
+  background-color: $white;
   @extend .w-36px;
   @extend .h-36px;
   @extend .br-100;
   @extend .absolute;
   @extend .top-0;
   @extend .left-0;
-  @extend .b-brand;
   @extend .tc;
   @extend .b--solid;
   @extend .bw1;
   @extend .animation-transition;
+  border-color: $blue-2;
 }
 /* checked mark aspect */
 .checkbox + label:after {
