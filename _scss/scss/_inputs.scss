@@ -4,30 +4,24 @@ fieldset
 }
 
 .input {
-  padding: .375rem .75rem;
-  border: 3px solid $brown-1;
-  bacground-color: $white;
+  padding: .727rem;
+  background-color: $gold-1;
   @extend .lh-copy;
-  @extend .br1;
-  @extend .fw5;
   @extend .hover-transition;
-  color: $blue-3;
+  color: $brown-4;
   -webkit-appearance: none;
 
   &::placeholder {
     @extend .animation-transition;
-  }
-
-  &:focus {
-    border-color: $blue-2;
-    box-shadow: none;
+    color: $brown-4;
   }
 
   &:focus + label {
       opacity: 1;
       pointer-events: auto;
       transform: translateY(0) translateZ(0);
-    }
+  
+  }
   &:focus::placeholder  {
     opacity: 0;
     pointer-events: none;
@@ -38,15 +32,14 @@ fieldset
 .input + label
 {
   position: absolute;
-  top: -.6rem;
-  margin-left: .65rem;
+  top: -1.5rem;
   @extend .f6;
-  @extend .fw7;
   left: 0;
   opacity: 0;
-  bacground-color: $white;
+  background-color: $brown-2;
   @extend .ph2;
   pointer-events: none;
+  color: $brown-4;
   transform: translateY(1rem) translateZ(0);
   @extend .animation-transition;
 }

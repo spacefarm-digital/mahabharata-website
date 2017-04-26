@@ -1,17 +1,13 @@
 .btn {
   font-size: 1rem;
-  padding: .375rem .75rem;
+  padding: .727rem 1.45rem;
   cursor: pointer;
   letter-spacing: 0.0375rem;
-  @extend .br1;
   color: $blue-3;
-  border: 3px solid;
-  @extend .no-underline;
-  @extend .fw7;
   transition: $hover-transition;
   @extend .tc;
-  @extend .lh-copy;
   @extend .nowrap;
+  background-color: $gold-2;
   // button-specific focus-state
   &:focus {
     opacity: .75;
