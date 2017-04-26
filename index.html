@@ -3,9 +3,20 @@ title: Mahabharata Homepage
 layout: default
 ---
 
-{% include atoms/heading.html class='mb3' %}
-{% include atoms/heading.html text='Тест на заглавие 2' level='2' class='db mb3' %}
-{% include atoms/heading.html text="Gold is best" level='3' class="gold-2 mb3" %}
-{% include atoms/heading.html level='4' class='mb3' %}
-{% include atoms/heading.html level='5' class='mb3' %}
-{% include atoms/heading.html level='6' class='mb3' %}
+<div class="bg-blue-3 white">
+    {% include atoms/heading.html className='mb3' %}
+    {% include atoms/heading.html text='Тест на заглавие 2' level='2' className='db mb3' %}
+    {% include atoms/heading.html text="Gold is best" level='3' className="gold-2 mb3" %}
+    {% include atoms/heading.html level='4' className='mb3' %}
+    {% include atoms/heading.html level='5' className='mb3' %}
+    {% include atoms/heading.html level='6' className='mb3' %}
+    
+    {% include atoms/button.html className="mb3" %}
+    
+    <div class="flex mb3">
+        {% include atoms/input.html className='mr2' %}
+        {% include atoms/button.html %}
+    </div>
+
+    {% include atoms/checkbox.html className="mb3" %}
+</div>
