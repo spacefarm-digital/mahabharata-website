@@ -1,6 +1,5 @@
----
-title: Mahabharata Book
-timezone: Europe/Sofia
+title: Mahabharata
+timezone: UTC
 collections:
   posts:
     title: Posts

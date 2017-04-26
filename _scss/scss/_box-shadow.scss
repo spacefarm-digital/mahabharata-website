@@ -1,0 +1,28 @@
+.shadow {
+	box-shadow: $shadow;
+	border: 1px solid $grey-1;
+}
+@include sm {
+	.shadow-sm {
+		box-shadow: $shadow;
+		border: 1px solid $grey-1;
+	}
+}
+@include md {
+	.shadow-md {
+		box-shadow: $shadow;
+		border: 1px solid $grey-1;
+	}
+}
+@include lg {
+	.shadow-lg {
+		box-shadow: $shadow;
+		border: 1px solid $grey-1;
+	}
+}
+@include xl {
+	.shadow-xl {
+		box-shadow: $shadow;
+		border: 1px solid $grey-1;
+	}
+}

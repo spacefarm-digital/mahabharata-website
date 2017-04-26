@@ -1,0 +1,53 @@
+/* Type Scale */
+.f1 { font-size: 2.441rem; }
+.f2 { font-size: 1.953rem; }
+.f3 { font-size: 1.563rem; }
+.f4 { font-size: 1.25rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .8rem; }
+.f7 { font-size: .512rem; }
+
+@include sm {
+  .f1-sm { font-size: 2.441rem; }
+  .f2-sm { font-size: 1.953rem; }
+  .f3-sm { font-size: 1.563rem; }
+  .f4-sm { font-size: 1.25rem; }
+  .f5-sm { font-size: 1rem; }
+  .f6-sm { font-size: .8rem; }
+  .f7-sm { font-size: .512rem; }
+}
+
+@include md {
+  .f1-md { font-size: 2.441rem; }
+  .f2-md { font-size: 1.953rem; }
+  .f3-md { font-size: 1.563rem; }
+  .f4-md { font-size: 1.25rem; }
+  .f5-md { font-size: 1rem; }
+  .f6-md { font-size: .8rem; }
+  .f7-md { font-size: .512rem; }
+}
+
+@include lg {
+  .f1-lg { font-size: 2.441rem; }
+  .f2-lg { font-size: 1.953rem; }
+  .f3-lg { font-size: 1.563rem; }
+  .f4-lg { font-size: 1.25rem; }
+  .f5-lg { font-size: 1rem; }
+  .f6-lg { font-size: .8rem; }
+  .f7-lg { font-size: .512rem; }
+}
+
+@include xl {
+  .f1-xl { font-size: 2.441rem; }
+  .f2-xl { font-size: 1.953rem; }
+  .f3-xl { font-size: 1.563rem; }
+  .f4-xl { font-size: 1.25rem; }
+  .f5-xl { font-size: 1rem; }
+  .f6-xl { font-size: .8rem; }
+  .f7-xl { font-size: .512rem; }
+}
+
+// This might not be needed anymore
+.f-36px {
+  font-size: 36px;
+}

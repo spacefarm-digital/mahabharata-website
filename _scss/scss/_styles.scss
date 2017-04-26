@@ -1,0 +1,198 @@
+.logo {
+  font-size: 42px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  @extend .db;
+}
+
+.btn-icon {
+  width: .7em;
+  height: .7em;
+  margin-right: .12em;
+  @extend .dib;
+}
+
+.separator {
+  li:not(:last-child) {
+    border-bottom: 1px solid $grey-1;
+  }
+}
+
+.lines
+{
+  @extend .tc;
+  @extend .relative;
+  &:before
+  {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 50%;
+
+      display: block;
+
+      width: 25%;
+      height: 2px;
+
+      transform: translate(-28px, -50%);
+
+      border-radius: 2px;
+      background-color: $grey-2;
+  }
+  &:after
+  {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+
+      display: block;
+
+      width: 25%;
+      height: 2px;
+
+      content: '';
+      transform: translate(28px, -50%);
+
+      border-radius: 2px;
+      background-color: $grey-2;
+  }
+}
+
+.uploader {
+  @extend .overflow-hidden;
+  input {
+    @extend .clip;
+  }
+  fieldset {
+    @extend .db;
+    @extend .ma0;
+    @extend .w-100;
+    @extend .h-100;
+    @extend .absolute;
+    background-color: $brand;
+    @extend .white;
+    @extend .fw5;
+    @extend .z-2;
+    left: 50%;
+    top: 50%;
+    @extend .pt4;
+    transform: translate(-50%, -50%);
+    @extend .br-100;
+    @extend .pointer;
+    @extend .states-bg;
+    &:hover {
+      background-color: $brand;
+    }
+    label {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// Adds tighter tracking for .f--brown type
+.f1.f--brown, .f2.f--brown, .f3.f--brown {
+  letter-spacing: -.025em;
+}
+
+.illustration-question {
+  width: 14rem;
+  @include sm {
+    width: 16rem;
+  }
+  @include lg {
+    width: 18rem;
+  }
+}
+
+.illustration-push-right {
+  transform: translateX(7rem);
+  @include sm {
+    transform: translateX(8rem);
+  }
+  @include lg {
+    transform: translateX(9rem);
+  }
+}
+
+.questions-illustration {
+  transform: translateX(-7rem);
+  @include sm {
+    transform: translateX(-8rem);
+  }
+  @include lg {
+    transform: translateX(-9rem);
+  }
+}
+
+path#svg-title {
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+}
+
+path#search-bank {
+  transform-origin: 50%;
+}
+
+path#search-term {
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+}
+
+g#search {
+  transform: translateY(1rem);
+}
+
+g#svg-tag, g#questions-2 {
+  transform-origin: 50% 50%;
+}
+
+.two-up-wrapper {
+  height: 29rem;
+  @include md {
+    height: 35rem;
+  }
+}
+
+.simulated-user {
+  width: 30rem;
+  padding-top: 2rem;
+  pointer-events: none;
+  transform: scale(.6);
+  transform-origin: 4% 0%;
+  @include md {
+    transform: scale(.75);
+  }
+}
+
+.two-up-wrapper-question {
+  height: 16rem;
+  @include sm {
+    height: 19rem;
+  }
+  @include md {
+    height: 28rem;
+  }
+}
+
+.simulated-search {
+  width: 60rem;
+  padding-top: 2rem;
+  pointer-events:none;
+  transform: scale(.31);
+  left: 0;
+  transform-origin: 0% 0%;
+  @include sm {
+    transform: scale(.5);
+  }
+  @include md {
+    transform: scale(.7);
+  }
+}

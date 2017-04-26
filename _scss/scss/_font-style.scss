@@ -1,0 +1,14 @@
+  .i         { font-style: italic; }
+  .fs-normal { font-style: normal; }
+
+small
+{
+  @extend .f6;
+  @extend .fw7;
+}
+
+mark
+{
+  background-color: $highlight;
+  color: #000;
+}

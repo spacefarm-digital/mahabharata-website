@@ -1,0 +1,37 @@
+a {
+  color: inherit;
+  @extend .fw6;
+}
+
+.link {
+  @extend .brand-text;
+  @extend .fw6;
+  border-bottom: 2px solid $brand-text;
+  transition: background-color 150ms ease;
+
+  &:hover
+  {
+    background-color: $highlight;
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
+
+.arrow {
+  &:after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNSA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMS40MTQiPjxwYXRoIGQ9Ik0uMjQxIDcuMzQ5YTEgMSAwIDEgMCAxLjUxOCAxLjMwMmwzLTMuNWExIDEgMCAwIDAgMC0xLjMwMmwtMy0zLjVBMSAxIDAgMSAwIC4yNDEgMS42NTFMMi42ODMgNC41LjI0MSA3LjM0OXoiIHN0eWxlPSJmaWxsOnJnYmEoMzEsIDM0LCAzOCwgMSkiLz48L3N2Zz4K");
+    width: .3em;
+    height: .3em;
+    margin-left: .25em;
+    display: inline-block;
+    transition: $hover-transition;
+  }
+  &:hover:after {
+    transform: translateX(.1em);
+  }
+}
+
+.disabled {
+  opacity: .3;
+  pointer-events: none;
+}

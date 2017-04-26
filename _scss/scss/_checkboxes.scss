@@ -1,0 +1,80 @@
+.checkbox-reset {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+  &:checked + label {
+    background-color: rgba($grey-1, .5);
+  }
+}
+
+.checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // checkbox-spefic focus state
+  .a11y &:focus + label::before {
+    box-shadow: 0 0 0 3px $highlight;
+    opacity: .75;
+  }
+}
+
+.checkbox + label {
+  position: relative;
+  padding-left: calc(36px + .75rem);
+  line-height: 36px;
+  @extend .dib;
+  @extend .pointer;
+}
+
+/* checkbox aspect */
+.checkbox + label:before {
+  content: '';
+  @extend .bg-white;
+  @extend .w-36px;
+  @extend .h-36px;
+  @extend .br-100;
+  @extend .absolute;
+  @extend .top-0;
+  @extend .left-0;
+  @extend .b-brand;
+  @extend .tc;
+  @extend .b--solid;
+  @extend .bw1;
+  @extend .animation-transition;
+}
+/* checked mark aspect */
+.checkbox + label:after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggZD0iTTkuMDY2IDE1LjExMWExLjUwMSAxLjUwMSAwIDAgMC0yLjEzMiAyLjExMWw1Ljc3OCA1LjgzNGExLjUgMS41IDAgMCAwIDIuMTE1LjAxNmwxMC4yMjItMTBhMS41IDEuNSAwIDEgMC0yLjA5OC0yLjE0NGwtOS4xNTcgOC45NTctNC43MjgtNC43NzR6IiBzdHlsZT0iZmlsbDp3aGl0ZSIvPjwvc3ZnPgo=");
+  @extend .absolute;
+  @extend .left-0;
+  @extend .top-0;
+  @extend .w-36px;
+  @extend .h-36px;
+  @extend .tc;
+  @extend .white;
+  @extend .animation-transition;
+  line-height: 36px;
+  @extend .scale-0;
+}
+
+// Checked
+.checkbox:checked + label:after {
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+  transition: $animation-transition;
+  transition-delay: .15s;
+  -webkit-transition-delay: .15s;
+}
+
+.checkbox:checked + label:before {
+  border-width: 18px;
+}
+
+.checkbox:disabled {
+  opacity: .1;
+}

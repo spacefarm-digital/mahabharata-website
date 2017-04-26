@@ -1,0 +1,30 @@
+.btn {
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  cursor: pointer;
+  letter-spacing: 0.0375rem;
+  @extend .br1;
+  color: #fff;
+  border: 3px solid;
+  @extend .no-underline;
+  @extend .fw7;
+  transition: $hover-transition;
+  @extend .tc;
+  @extend .lh-copy;
+  @extend .nowrap;
+  // button-specific focus-state
+  &:focus {
+    opacity: .75;
+  }
+}
+
+.ghost-btn {
+  @extend .bg-white;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    background-color: #fff !important;
+    opacity: 1;
+  }
+}

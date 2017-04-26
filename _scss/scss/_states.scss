@@ -1,0 +1,76 @@
+.hover-transition
+{
+  transition: $hover-transition;
+}
+
+.animation-transition
+{
+    transition: $animation-transition;
+
+}
+
+.states-bg {
+  transition: $hover-transition;
+  &:hover {
+    background-color: rgba($grey-1, .25);
+  }
+  &:active {
+    background-color: rgba($grey-1, .5);
+  }
+  &:disabled {
+    background-color: $grey-2;
+  }
+  .states-bg:hover {
+    background-color: rgba($grey-1, .5);
+  }
+}
+
+.states-opacity {
+  transition: $hover-transition;
+  transform: translateZ(0);
+  &:hover {
+    opacity: .7;
+  }
+  &:active {
+    opacity: .35;
+    transform: translateZ(0);
+  }
+  &:disabled {
+    background-color: $grey-1;
+  }
+}
+
+
+.states-shadow {
+  transition: $hover-transition;
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+  &:active {
+    box-shadow: $shadow;
+  }
+}
+
+.states-green {
+  transition: $hover-transition;
+  &:hover {
+    color: $green!important;
+  }
+  &:active {
+    color: $green!important;
+  }
+}
+
+.states-red {
+  transition: $hover-transition;
+  &:hover {
+    color: $red!important;
+  }
+  &:focus {
+    color: $red!important;
+  }
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
