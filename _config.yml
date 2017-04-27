@@ -5,6 +5,9 @@ collections:
   authors:
     title: Authors
     output: false
+    Field name:
+      First name: 
+      Last name: 
   posts:
     title: Posts
     output: true
