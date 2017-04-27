@@ -13,3 +13,5 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets:
 
 Check out the [Jekyll docs](http://jekyllrb.com) for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo](https://github.com/mojombo/jekyll).
+
+**Check!**
