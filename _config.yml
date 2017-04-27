@@ -5,6 +5,9 @@ collections:
   authors:
     title: Authors
     output: false
+  excerpts:
+    title: Excerpts
+    output: true
   posts:
     title: Posts
     output: true
