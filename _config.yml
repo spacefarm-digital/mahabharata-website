@@ -25,7 +25,7 @@ defaults:
     layout: page
 - scope:
     path: ''
-    type: "authors"
+    type: authors
   values:
     Name:
       first: 
