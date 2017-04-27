@@ -8,6 +8,9 @@ collections:
   excerpts:
     title: Excerpts
     output: true
+  news:
+    title: Posts
+    output: true
   posts:
     title: Posts
     output: true
