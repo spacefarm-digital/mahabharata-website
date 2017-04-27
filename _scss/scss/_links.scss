@@ -1,5 +1,8 @@
 a {
-  color: inherit;
+  color: $blue-1;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .link {

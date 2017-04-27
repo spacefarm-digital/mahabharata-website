@@ -1,0 +1,4 @@
+<fieldset class="{{include.className}}">
+    <input id="{{include.id}}" placeholder="{{include.placeholder}}" type="number" min={{include.min | default: 0}} max={{include.max | default: 10}} class="w3 input">
+    <label for="{{include.id}}">{{include.label}}</label>
+</fieldset>

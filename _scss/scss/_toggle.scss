@@ -15,22 +15,20 @@
 .toggle + label {
   position: relative;
   padding-left: calc(64px + .75rem);
-  line-height: 36px;
+  line-height: 30px;
   @extend .dib;
   @extend .pointer;
 }
 
 .toggle + label:before {
   content: '';
-  width: 64px;
-  @extend .h-36px;
-  border-radius: 36px;
+  width: 60px;
+  height: 30px;
+  background-color: $gold-1;
   @extend .absolute;
   @extend .top-0;
   @extend .left-0;
-  @extend .blue-2;
   @extend .tc;
-  @extend .b--solid;
   @extend .bw1;
   @extend .animation-transition;
 }
@@ -38,21 +36,17 @@
 .toggle + label:after {
   content: '';
   @extend .absolute;
-  @extend .left-0;
-  @extend .top-0;
-  @extend .w-36px;
-  @extend .h-36px;
-  @extend .br-100;
-  bacground-color: $white;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  background-color: $brown-1;
   @extend .animation-transition;
-  @extend .b--solid;
-  @extend .blue-1;
-  @extend .bw1;
 }
 
 // Checked
 .toggle:checked + label:after {
-  transform: translateX(28px) translateZ(0);
+  transform: translateX(30px) translateZ(0);
   transition: $animation-transition;
   border-color: $blue-2;
   transition-delay: .15s;

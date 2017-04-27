@@ -1,5 +1,5 @@
-<fieldset>
-	<input id="demo-checkbox" name="Name" type="checkbox" class="checkbox" />
+<fieldset class="{{include.className}}">
+	<input id="{{include.id}}" name="Name" type="{{include.type | default: 'checkbox'}}" class="checkbox" />
 
-	<label for="demo-checkbox">Label</label>
+	<label for="{{include.id}}">{{include.label}}</label>
 </fieldset>

@@ -25,8 +25,8 @@
 
 .checkbox + label {
   position: relative;
-  padding-left: calc(36px + 1rem);
-  line-height: 2rem;
+  padding-left: calc(30px + .5rem);
+  line-height: 30px;
   @extend .dib;
   @extend .pointer;
 }
@@ -35,8 +35,8 @@
 .checkbox + label:before {
   content: '';
   background-color: transparent;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   @extend .br-100;
   @extend .absolute;
   @extend .top-0;
@@ -55,10 +55,10 @@
   border-radius: 100%;
   display: block;
   background-color: $gold-2;
-  top: .375rem;
-  left: .375rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
   @extend .animation-transition;
   transform: scale(0) translateZ(0);
   opacity: 0;

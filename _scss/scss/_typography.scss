@@ -22,7 +22,7 @@ body {
 }
 
 ::selection {
-  background-color: $blue-1;
+  background-color: $gold-1;
 }
 
 p {
@@ -158,5 +158,15 @@ p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+.first-letter {
+  &:first-letter {
+    font-size: 4.4rem;
+    float: left;
+    padding-right: 1rem;
+    line-height: 1;
+    margin-top: -.3rem;
   }
 }

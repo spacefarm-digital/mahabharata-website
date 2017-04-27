@@ -30,6 +30,7 @@
   transform: translateZ(0);
   &:hover {
     opacity: .7;
+    text-decoration: none;
   }
   &:active {
     opacity: .35;
