@@ -8,5 +8,3 @@ Let's add some text. And an image.
 And some more text!
 
 Just a test.
-
-Some norevjhxjhvhjdxvs
