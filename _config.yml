@@ -5,25 +5,22 @@ collections:
   authors:
     title: Authors
     output: false
-  excerpts:
-    title: Excerpts
-    output: true
-  posts:
-    title: Posts
+  news:
+    title: News
     output: true
   uploads:
     title: Uploads
     output: true
-  news:
-    title: news
+  excerpts:
+    title: Excerpts
     output: true
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: news
   values:
     layout: post
-    permalink: "/posts/:title/"
+    permalink: "/news/:title/"
 - scope:
     path: ''
     type: pages
