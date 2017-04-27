@@ -23,4 +23,11 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: "authors"
+  values:
+    Name:
+      first: 
+      last: 
 permalink: pretty
