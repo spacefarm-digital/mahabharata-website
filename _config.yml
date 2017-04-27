@@ -8,14 +8,14 @@ collections:
   excerpts:
     title: Excerpts
     output: true
-  news:
-    title: Posts
-    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
+    output: true
+  news:
+    title: news
     output: true
 defaults:
 - scope:
