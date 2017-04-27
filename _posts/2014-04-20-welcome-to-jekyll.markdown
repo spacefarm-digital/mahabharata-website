@@ -1,9 +1,6 @@
 ---
 title: Welcome to Jekyll! Does it work?
 date: 2014-04-20 09:11:00 Z
-categories:
-- jekyll
-- update
 layout: post
 ---
 
