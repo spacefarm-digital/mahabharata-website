@@ -216,7 +216,7 @@ iframe {
   font-weight: normal;
   font-style: bold; }
 
-.f--brown, .cms h1, .cms h2, .cms h3, .cms h4, .cms h5, .cms h6 {
+.f--brown {
   font-family: "Brown"; }
 
 .fade-0 {
@@ -328,7 +328,7 @@ iframe {
 .blue-1 {
   color: #73B9FF; }
 
-.blue-2, .cms blockquote {
+.blue-2 {
   color: #297ACC; }
 
 .blue-3, th, .nice-select .list {
@@ -1876,7 +1876,7 @@ mark {
 .fw5, .uploader fieldset, .nice-select {
   font-weight: 500; }
 
-.fw6, .link, .cms a, th, .tooltip:after {
+.fw6, th, .tooltip:after {
   font-weight: 600; }
 
 .fw7, small {
@@ -2131,18 +2131,9 @@ img {
     line-height: 1.5; } }
 
 a {
-  color: #73B9FF; }
+  color: #297ACC; }
   a:hover {
     text-decoration: underline; }
-
-.link, .cms a {
-  color: #297ACC;
-  border-bottom: 2px solid #297ACC;
-  transition: background-color 150ms ease; }
-  .link:hover, .cms a:hover {
-    background-color: #73B9FF;
-    text-decoration: none;
-    border-bottom: none; }
 
 .arrow:after {
   content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNSA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMS40MTQiPjxwYXRoIGQ9Ik0uMjQxIDcuMzQ5YTEgMSAwIDEgMCAxLjUxOCAxLjMwMmwzLTMuNWExIDEgMCAwIDAgMC0xLjMwMmwtMy0zLjVBMSAxIDAgMSAwIC4yNDEgMS42NTFMMi42ODMgNC41LjI0MSA3LjM0OXoiIHN0eWxlPSJmaWxsOnJnYmEoMzEsIDM0LCAzOCwgMSkiLz48L3N2Zz4K");
@@ -2180,7 +2171,7 @@ a {
 .mw5, .nice-select {
   max-width: 16rem; }
 
-.mw6 {
+.mw6, .cms {
   max-width: 32rem; }
 
 .mw7 {
@@ -2752,7 +2743,7 @@ a {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
 
-.ph3, .nice-select .option {
+.ph3, .nice-select .option, .cms blockquote {
   padding-left: 1rem;
   padding-right: 1rem; }
 
@@ -4721,7 +4712,7 @@ a {
     width: 100%;
     height: 100%; }
 
-.f1.f--brown, .cms h1.f1, .cms h2.f1, .cms h3.f1, .cms h4.f1, .cms h5.f1, .cms h6.f1, .f2.f--brown, .cms h1.f2, .cms h2.f2, .cms h3.f2, .cms h4.f2, .cms h5.f2, .cms h6.f2, .f3.f--brown, .cms h1.f3, .cms h2.f3, .cms h3.f3, .cms h4.f3, .cms h5.f3, .cms h6.f3 {
+.f1.f--brown, .f2.f--brown, .f3.f--brown {
   letter-spacing: -.025em; }
 
 .illustration-question {
@@ -4856,14 +4847,14 @@ g#svg-tag, g#questions-2 {
 .divided-right {
   border-right: 2px solid #BFAF8F; }
 
-.excerpt-quotes {
+.excerpt-quotes, .cms blockquote p {
   display: block; }
-  .excerpt-quotes:before {
+  .excerpt-quotes:before, .cms blockquote p:before {
     content: '“';
     position: absolute;
     left: -1rem;
     color: #D4A73F; }
-  .excerpt-quotes:after {
+  .excerpt-quotes:after, .cms blockquote p:after {
     content: '”';
     position: absolute;
     right: -1rem;
@@ -5172,7 +5163,7 @@ p {
 .aspect-ratio--8x5 {
   padding-bottom: 62.5%; }
 
-.center {
+.center, .cms {
   margin-right: auto;
   margin-left: auto; }
 
@@ -6137,7 +6128,6 @@ to {
   /* Lists */
   /* Blockquotes */ }
   .cms h1, .cms h2, .cms h3, .cms h4, .cms h5, .cms h6 {
-    font-weight: 700;
     line-height: 1.25;
     margin-bottom: .5rem; }
   .cms h1 {
@@ -6155,8 +6145,7 @@ to {
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
-    border-radius: .375rem; }
+    max-width: 100%; }
   .cms ul, .cms ol, .cms li {
     position: relative; }
   .cms ul, .cms ol {
@@ -6164,14 +6153,14 @@ to {
   .cms ul ul, .cms ol ol {
     padding-left: .5rem; }
   .cms ul {
-    margin-left: 1.33rem; }
+    margin-left: 1rem; }
     .cms ul > li:before {
       content: '●';
-      left: -1.33rem;
+      left: -1rem;
       font-size: .75rem;
       top: .25rem;
       position: absolute;
-      color: #73B9FF; }
+      color: #D4A73F; }
   .cms ol {
     list-style: none;
     margin-left: 1rem;
@@ -6182,13 +6171,11 @@ to {
       height: 100%;
       content: counter(i);
       counter-increment: i;
-      color: #73B9FF; }
+      color: #D4A73F; }
   .cms blockquote {
-    background-color: #fff;
     display: block;
-    border-radius: .375rem;
-    padding: 1rem;
-    font-weight: 700;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    color: #665229; }
     .cms blockquote p {
-      margin: 0; }
+      position: relative;
+      display: inline; }

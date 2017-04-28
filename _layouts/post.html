@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="post ph3 center">
+    <article class="cms">
+        {% include atoms/heading.html level="1" size="1" text=page.title %}
 
-<div class="post">
-{{ content }}
+        {{ content }}
+    </article>
 </div>

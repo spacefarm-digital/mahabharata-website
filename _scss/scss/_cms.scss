@@ -1,11 +1,10 @@
 .cms {
-
+  @extend .mw6;
+  @extend .center;
 	/* Headings */
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 700;
 		line-height: 1.25;
     margin-bottom: .5rem;
-    @extend .f--brown;
   }
 
   h1 {
@@ -35,7 +34,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 100%;
-    border-radius: .375rem;
 	}
 
 	/* Lists */
@@ -52,14 +50,14 @@
 	}
 
   ul {
-    margin-left: 1.33rem;
+    margin-left: 1rem;
     >li:before {
       content: '●';
-      left: -1.33rem;
+      left: -1rem;
       font-size: .75rem;
       top: .25rem;
       position: absolute;
-      color: $blue-1;
+      color: $gold-2;
     }
   }
 
@@ -74,28 +72,21 @@
       height: 100%;
       content: counter(i);
       counter-increment: i;
-      color: $blue-1;
+      color: $gold-2;
     }
 	}
 
   /* Blockquotes */
   blockquote {
-    background-color: #fff;
     display: block;
-    border-radius: .375rem;
-    padding: 1rem;
-    font-weight: 700;
     font-size: 1.25rem;
     @extend .mv3;
-    @extend .blue-2;
+    @extend .ph3;
+    color: $brown-4;
     p {
-      margin: 0;
+      @extend .excerpt-quotes;
+      position: relative;
+      display: inline;
     }
   }
-
-	// Links
-	a {
-		@extend .link;
-	}
-
 }

@@ -1,21 +1,7 @@
 a {
-  color: $blue-1;
+  color: $blue-2;
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.link {
-  color: $blue-2;
-  @extend .fw6;
-  border-bottom: 2px solid $blue-2;
-  transition: background-color 150ms ease;
-
-  &:hover
-  {
-    background-color: $blue-1;
-    text-decoration: none;
-    border-bottom: none;
   }
 }
 
