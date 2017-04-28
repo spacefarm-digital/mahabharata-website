@@ -2,9 +2,6 @@
 title: Mahabharata
 timezone: UTC
 collections:
-  authors:
-    title: Authors
-    output: false
   excerpts:
     title: Excerpts
     output: true
