@@ -13,7 +13,7 @@ collections:
     output: true
   reviews:
     title: Reviews
-    output: true
+    output: false
   uploads:
     title: Uploads
     output: true
