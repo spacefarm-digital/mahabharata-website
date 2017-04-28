@@ -12,11 +12,11 @@ layout: default
         <!-- Excerpts -->
         <section>
             {% include atoms/heading.html level="2" size="2" text="Откъси" className="mb2" %}
-
             <div class="row">
-                <div class="col-6 col-sm-4 col-lg-3 mb3"><a href="#">{% include molecules/excerpt.html title="A book title" %}</a></div>
-                <div class="col-6 col-sm-4 col-lg-3 mb3">{% include molecules/excerpt.html title="A book title" %}</div>
-                <div class="col-6 col-sm-4 col-lg-3 mb3">{% include molecules/excerpt.html title="A book title" %}</div>
+                <!-- Loop -->
+                {% for excerpt in site.excerpts %}
+                    <div class="col-6 col-sm-4 col-lg-3 mb3"><a href="{{excerpt.url}}" class="db states-opacity">{% include molecules/excerpt.html title=excerpt.title %}</a></div>
+                {% endfor %}
             </div>
         </section>
 
