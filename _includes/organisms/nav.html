@@ -1,0 +1,18 @@
+<nav class="relative mb3 ph3">
+	  <div class="mw7 flex justify-between items-center center">
+
+	    <!-- Logo -->
+	    <a href="/" class="db states-opacity blue-3">
+            Махабхарата
+        </a>
+
+	    <!-- Nav -->
+	    <ul class="flex grey-2 overflow-x-scroll overflow-x-visible-md list">
+            {% for nav in site.data.nav %}
+                <li>
+                <a href="{{ nav.href }}" class="pa3 db nowrap states-opacity brown-4">{{ nav.title }}</a>
+                </li>
+            {% endfor %}
+	    </ul>
+	  </div>
+	</nav>

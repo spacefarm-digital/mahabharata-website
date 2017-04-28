@@ -1,0 +1,11 @@
+- title: 'За книгата'
+  href: '/about/'
+
+- title: 'Разгледай'
+  href: '/explore/'
+
+- title: 'Рецензии'
+  href: '/reviews/'
+
+- title: 'Новини'
+  href: '/posts/'

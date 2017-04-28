@@ -6,7 +6,7 @@ a {
 }
 
 .link {
-  @extend .blue-2;
+  color: $blue-2;
   @extend .fw6;
   border-bottom: 2px solid $blue-2;
   transition: background-color 150ms ease;

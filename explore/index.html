@@ -1,6 +1,38 @@
 ---
-title: Explore the book
+title: Разгледай книгата
 layout: default
 ---
 
-{% include molecules/excerpt.html %}
+<div class="ph3 center">
+    <div class="mw7 center">
+        <!-- Page title -->
+        {% include atoms/heading.html level="1" size="1" text="Разгледай книгата" className="tc
+        mb3" %}
+        
+        <!-- Excerpts -->
+        <section>
+            {% include atoms/heading.html level="2" size="2" text="Откъси" className="mb2" %}
+
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 mb3"><a href="#">{% include molecules/excerpt.html title="A book title" %}</a></div>
+                <div class="col-6 col-sm-4 col-lg-3 mb3">{% include molecules/excerpt.html title="A book title" %}</div>
+                <div class="col-6 col-sm-4 col-lg-3 mb3">{% include molecules/excerpt.html title="A book title" %}</div>
+            </div>
+        </section>
+
+        <section>
+            {% include atoms/heading.html level="2" size="2" text="Галерия" className="mb2" %}
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="/uploads/1.jpg" alt="" class="mb2">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="/uploads/2.jpg" alt="" class="mb2">
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <img src="/uploads/3.jpg" alt="" class="mb2">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
