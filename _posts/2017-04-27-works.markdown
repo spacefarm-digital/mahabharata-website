@@ -1,8 +1,6 @@
 ---
 title: Works?
 date: 2017-04-27 18:12:00 Z
-tags:
-- featured
 ---
 
 Some added text. And this? Does this work?
