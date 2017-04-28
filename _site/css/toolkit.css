@@ -1435,6 +1435,9 @@ input[type="url"],
   .flex-md {
     display: -ms-flexbox;
     display: flex; }
+  .flex-row-md {
+    -ms-flex-direction: row;
+        flex-direction: row; }
   .inline-flex-md {
     display: -ms-inline-flexbox;
     display: inline-flex; }
@@ -4840,6 +4843,18 @@ g#svg-tag, g#questions-2 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+
+.divided-bottom {
+  border-bottom: 2px solid #BFAF8F; }
+
+.divided-top {
+  border-top: 2px solid #BFAF8F; }
+
+.divided-left {
+  border-left: 2px solid #BFAF8F; }
+
+.divided-right {
+  border-right: 2px solid #BFAF8F; }
 
 @media (min-width: 62em) {
   th {

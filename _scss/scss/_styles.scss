@@ -214,3 +214,19 @@ g#svg-tag, g#questions-2 {
     transform: translateX(-50%);
   }
 }
+
+.divided-bottom {
+  border-bottom: 2px solid $brown-3;
+}
+
+.divided-top {
+  border-top: 2px solid $brown-3;
+}
+
+.divided-left {
+  border-left: 2px solid $brown-3;
+}
+
+.divided-right {
+  border-right: 2px solid $brown-3;
+}

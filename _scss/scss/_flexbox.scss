@@ -108,6 +108,7 @@
 }
 @include md {
   .flex-md { display: flex }
+  .flex-row-md { flex-direction: row }
   .inline-flex-md { display: inline-flex }
   .flex-auto-md {
     flex: 1 1 auto;

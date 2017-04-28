@@ -1,12 +1,13 @@
-<figure class="db mw6 {{include.className}}">
-    <blockquote class="brown-4 f3 mw6 mb3">
-    	<p class="ma0">
-            <span class="gold-2" aria-hidden>“</span>
-            {{include.text}}
+<figure class="db mw6 f3 {{include.className}}">
+    <!-- Quote -->
+    <blockquote class="brown-4 mw6 mb3 {{ include.size }}">
+        <p class="ma0">
+            <span class="gold-2" aria-hidden>“</span> {{include.text}}
             <span class="gold-2" aria-hidden>”</span>
         </p>
     </blockquote>
-    <div class="flex justify-end">
-        <figcaption>{{include.author}}</figcaption>
-    </div>
+    <!-- Author -->
+    {% if include.author %}
+        <figcaption class="tr f5">{{include.author}}</figcaption>
+    {% endif %}
 </figure>
