@@ -30,5 +30,5 @@ defaults:
     path: ''
     type: reviews
   values:
-    source:
+    source: 
 permalink: pretty
