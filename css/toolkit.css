@@ -4856,6 +4856,20 @@ g#svg-tag, g#questions-2 {
 .divided-right {
   border-right: 2px solid #BFAF8F; }
 
+.excerpt-quotes {
+  display: block; }
+  .excerpt-quotes:before {
+    content: '“';
+    position: absolute;
+    left: -1rem;
+    color: #D4A73F; }
+  .excerpt-quotes:after {
+    content: '”';
+    position: absolute;
+    right: -1rem;
+    bottom: 0;
+    color: #D4A73F; }
+
 @media (min-width: 62em) {
   th {
     white-space: wrap; } }

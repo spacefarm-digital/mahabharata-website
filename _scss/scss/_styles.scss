@@ -230,3 +230,21 @@ g#svg-tag, g#questions-2 {
 .divided-right {
   border-right: 2px solid $brown-3;
 }
+
+.excerpt-quotes {
+  display: block;
+  &:before {
+    content: '“';
+    position: absolute;
+    left: -1rem;
+    color: $gold-2;
+  }
+
+  &:after {
+    content: '”';
+    position: absolute;
+    right: -1rem;
+    bottom: 0;
+    color: $gold-2;
+  }
+}
