@@ -47,8 +47,11 @@ layout: default
             <ul class="row mb3">
                 {% for article in site.posts limit: 2 %}
                     <li class="col-12 col-md-6">
-                        <a href="{{ article.url }}">{% include atoms/heading.html level="3" size="3" text=article.title className="mb2" %}</a>
-                        {{ article.excerpt }}
+                        <!-- Abstract this into a component -->
+                        <a href="{{ article.url }}">
+                            {{ article.excerpt }}
+                            {% include atoms/heading.html level="3" size="3" text=article.title className="mb2" %}
+                        </a>
                     </li>
                 {% endfor %}
             </ul>
