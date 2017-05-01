@@ -33,6 +33,12 @@
   transform: translateZ(0);
 }
 
+.absolute-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .absolute-center-x {
   left: 50%;
   transform: translateX(-50%);
@@ -108,5 +114,27 @@
 .divider {
   > *:not(:last-child) {
     border-bottom: 1px solid $brown-1;
+  }
+}
+
+.divided-bottom {
+  border-bottom: 2px solid $brown-3;
+}
+
+.divided-top {
+  border-top: 2px solid $brown-3;
+}
+
+.divided-left {
+  border-left: 2px solid $brown-3;
+}
+
+.divided-right {
+  border-right: 2px solid $brown-3;
+}
+
+.no-last-border {
+  &:last-of-type() {
+    border-bottom: 0;
   }
 }

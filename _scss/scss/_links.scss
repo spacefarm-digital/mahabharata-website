@@ -6,12 +6,15 @@ a {
 }
 
 .arrow {
+  &:hover {
+    text-decoration: none;
+  }
   &:after {
-    content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNSA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMS40MTQiPjxwYXRoIGQ9Ik0uMjQxIDcuMzQ5YTEgMSAwIDEgMCAxLjUxOCAxLjMwMmwzLTMuNWExIDEgMCAwIDAgMC0xLjMwMmwtMy0zLjVBMSAxIDAgMSAwIC4yNDEgMS42NTFMMi42ODMgNC41LjI0MSA3LjM0OXoiIHN0eWxlPSJmaWxsOnJnYmEoMzEsIDM0LCAzOCwgMSkiLz48L3N2Zz4K");
+    content: '»';
     width: .3em;
-    height: .3em;
     margin-left: .25em;
-    display: inline-block;
+    height: 100%;
+    display: inline;
     transition: $hover-transition;
   }
   &:hover:after {

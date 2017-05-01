@@ -215,22 +215,6 @@ g#svg-tag, g#questions-2 {
   }
 }
 
-.divided-bottom {
-  border-bottom: 2px solid $brown-3;
-}
-
-.divided-top {
-  border-top: 2px solid $brown-3;
-}
-
-.divided-left {
-  border-left: 2px solid $brown-3;
-}
-
-.divided-right {
-  border-right: 2px solid $brown-3;
-}
-
 .excerpt-quotes {
   display: block;
   &:before {
@@ -248,15 +232,3 @@ g#svg-tag, g#questions-2 {
     color: $gold-2;
   }
 }
-
-// .cms-excerpt {
-//   @include md {
-//     display: flex;
-//     img {
-//       flex: 1 1 50%;
-//     }
-//     p {
-//       flex: 1 1 50%;
-//     }
-//   }
-// }

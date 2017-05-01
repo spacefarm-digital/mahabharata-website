@@ -3,7 +3,6 @@ title: iPhone post
 date: 2017-04-27 18:56:00 Z
 ---
 
-![Screen Shot 2017-04-28 at 4.00.56 PM.png](/uploads/Screen%20Shot%202017-04-28%20at%204.00.56%20PM.png)
 Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that’s worth the effort every time.
 
 ![A half-full Chemex sitting on a white table](/uploads/1.jpg)

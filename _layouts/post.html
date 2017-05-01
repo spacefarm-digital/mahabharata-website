@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<div class="post ph3 center">
+<div class="post ph3 center pv3">
     <div class="mw6 center relative flex flex-column justify-center">
-        {% include atoms/heading.html level="1" size="1" text=page.title className="dib center mv3" %}
+        {% include atoms/heading.html level="1" size="1" text=page.title className="dib mb2" %}
+        <span class="db brown-4 mb4">{{ page.date | date: "%d/%m/%Y" }}</span>
         <article class="cms">
             {{ content }}
         </article>

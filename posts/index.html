@@ -19,7 +19,7 @@ layout: default
                {{ article.excerpt | remove: '<p>' | remove: '</p>' }}
             {% endcapture %}
 
-            {% include organisms/preview.html title=article.title date=theDate text=theExcerpt buttonText="Прочети" className="mb4" url=article.url %}
+            {% include organisms/preview.html title=article.title date=theDate text=theExcerpt buttonText="Прочети" className="mb4 no-last-border" url=article.url %}
         {% endfor %}
     </div>
 </div>

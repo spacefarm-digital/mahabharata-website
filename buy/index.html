@@ -11,43 +11,60 @@ layout: default
 
         <section class="pv2">
             <!-- Section title -->
-            {% include atoms/heading.html level="2" size="3" text="Купи онлайн" className="mb3"
+            {% include atoms/heading.html level="2" size="4" text="Купи онлайн" className="mb3"
             %}
     
-            <div class="row mb3">
+            <div class="row mb3 divided-bottom pb4">
                 <div class="col-12 col-sm-5 col-md-4 col-lg-3 mb3 mb0-sm">
-                    <img src="/uploads/cover.jpg" alt="">
+                    <img src="/uploads/cover.jpg" alt="" class="db">
                 </div>
     
                 <!-- Content -->
                 <div class="col-12 col-sm-7 col-md-8 col-lg-9 mb3 mb0-sm">
-                    <div class="mw6">
-                        <p class="f4 lh-title mb1">Махабхарата</p>
+                    <div class="mw6 cms">
+                        <p class="f2 lh-title mb1">Махабхарата</p>
                         <p>Разказана от Кришна Дхарма</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-                            doloremque impedit ducimus asperiores earum laudantium magnam,
-                            voluptatem aspernatur officia quibusdam excepturi. Optio dignissimos
-                            culpa nesciunt porro, dolore. Odit, eum, dicta.</p>
+                        <p>Добре дошли в дивния свят на Махабхарата!
+                        Добре дошли в един свят, в който богове и герои бродят по земята,където животът е възприеман като малка стъпка по вечния път към вселени от несвършващо щастие.</p>
+
+                        <p>“Махабхарата” разказана от Кришна Дхарма е автентична интерпретация на превода на оригиналния санскритски текст от Манматха Нат Дутт. Високо оценена от критиката и читателите, книгата е финалист за престижната наградa Benjamin Franklin Award и е преиздавана девет пъти.</p>
+
+                        <p>Torchlight Publishing с гордост ви представя “Махабхарата” разказана от Кришна Дхарма в луксозно илюстрирано издание с твърди корици.</p>
+                        <ul>
+                            <li>Брой страници: 1060</li>
+                            <li>Формат: 14.5 х 22 х 5.5 см</li>
+                            <li>ISBN: 978&#8211;619&#8211;90735&#8211;0&#8211;6s</li>
+                        </ul>
+
                         <div class="flex items-center flex-wrap">
-                            <p class="mr2">Цена: $$</p>
-                            <button class="btn mb3 states-opacity">Поръчай</button>
+                            <!--<p class="mr2">Цена: $$</p>-->
+                            <button id="js-open-form" class="btn states-opacity center mh0-sm">Поръчай</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Purchase form -->
-            <span class="f4 lh-title mb2 db">Попълни своите детайли:</span>
             {% include organisms/form.html %}
         </section>
 
         <section class="pv2">
             <!-- Section title -->
-            {% include atoms/heading.html level="2" size="3" text="В книжарниците" className="
-            mb3" %}
+            {% include atoms/heading.html level="2" size="4" text="В книжарниците" className="
+            mb2" %}
 
-            <p class="mw6 brown-3">Очаквайте скоро подробен списък с книжарниците, в които се предлага Махабхарата.</p>
+            <p class="mw6 brown-4">Очаквайте скоро подробен списък с книжарниците, в които се предлага Махабхарата.</p>
         </section>
 
     </div>
 </div>
+
+<script>
+    const openFormButton = document.querySelector('#js-open-form');
+    const purchaseForm = document.querySelector('#js-purchase-form');
+
+    openFormButton.onclick = function() {
+        purchaseForm.style.height = "auto";
+        this.style.display = "none";
+    }
+</script>
