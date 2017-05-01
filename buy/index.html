@@ -1,0 +1,53 @@
+---
+title: Разгледай книгата
+layout: default
+---
+
+<div class="ph3 center">
+    <div class="mw7 center">
+        
+        <!-- Page title -->
+        {% include atoms/heading.html level="1" size="1" text="Купи" className="tc mb3" %}
+
+        <section class="pv2">
+            <!-- Section title -->
+            {% include atoms/heading.html level="2" size="3" text="Купи онлайн" className="mb3"
+            %}
+    
+            <div class="row mb3">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3 mb3 mb0-sm">
+                    <img src="/uploads/cover.jpg" alt="">
+                </div>
+    
+                <!-- Content -->
+                <div class="col-12 col-sm-7 col-md-8 col-lg-9 mb3 mb0-sm">
+                    <div class="mw6">
+                        <p class="f4 lh-title mb1">Махабхарата</p>
+                        <p>Разказана от Кришна Дхарма</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+                            doloremque impedit ducimus asperiores earum laudantium magnam,
+                            voluptatem aspernatur officia quibusdam excepturi. Optio dignissimos
+                            culpa nesciunt porro, dolore. Odit, eum, dicta.</p>
+                        <div class="flex items-center flex-wrap">
+                            <p class="mr2">Цена: $$</p>
+                            <button class="btn mb3 states-opacity">Поръчай</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Purchase form -->
+            <span class="f4 lh-title mb2 db">Попълни своите детайли:</span>
+            {% include organisms/form.html %}
+        </section>
+
+        <section class="pv2">
+            <!-- Section title -->
+            {% include atoms/heading.html level="2" size="3" text="В книжарниците" className="
+            mb3" %}
+
+            <p class="mw6 brown-3">Очаквайте скоро подробен списък с книжарниците, в които се предлага Махабхарата.</p>
+        </section>
+
+    </div>
+</div>

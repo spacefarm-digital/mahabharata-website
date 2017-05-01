@@ -1,50 +1,55 @@
 <footer class="ph3 f5 f6-md">
-        <div class="mw7 center divided-top pt4">
-            {% include atoms/heading.html text="Махабхарата" size="4" level="2" className="blue-4 mb4 tc" %}
-           <div class="row mb4">
-            {% comment %} Contact links{% endcomment %}
-            <div class="col-12 col-sm-6 col-lg-4">
-                {% include atoms/heading.html text="Контакт с нас" size="5" level="3" className="blue-4 mb3" %}
-                    <ul>
-                        <li>
-                            <p>За новини, харесайте страницата ни във Facebook
-                            <a href="#" target="_blank">Facebook Kirtan Raga</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>За въпроси и мнения, пишете на
-                            <a href="email1@mh.com">email1@mh.com</a></p>
-                        </li>
-                        <li>
-                            <p>За поръчки и доставки, пишете на
-                            <a href="email2@mh.com">email1@mh.com</a></p>
-                        </li>
-                        <li>
-                            <p>За въпроси и мнения, пишете на
-                            <a href="tel: 0888420420">0888420420</a></p>
-                        </li>
-                    </ul>
+    <div class="mw7 center divided-top pt4">
+        {% include atoms/heading.html text="Махабхарата" size="4" level="2" className="blue-4
+        mb4 tc" %}
+
+        <div class="row mb4">
+            {% comment %} Contact links {% endcomment %}
+            <div class="col-12 col-sm-6 col-md-4">
+                {% include atoms/heading.html text="Контакт с нас" size="5" level="3" className="blue-4
+                mb3" %}
+                <ul>
+                    <li>
+                        <p>За новини, харесайте страницата
+                            <a href="https://www.facebook.com/Mahabharata.bg/" target="_blank">Махабхарата във Facebook</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>За въпроси и мнения, пишете на
+                            <a href="mailto: info@mahabharata.bg">info@mahabharata.bg</a></p>
+                    </li>
+                    <li>
+                        <p>За поръчки и доставки, пишете на
+                            <a href="mailto: shop@mahabharata.bg">shop@mahabharata.bg</a></p>
+                    </li>
+                    <li>
+                        <p>За въпроси и мнения, пишете на
+                            <a href="tel: 0899601919">0899 60 1919</a></p>
+                    </li>
+                </ul>
             </div>
 
             {% comment %} Purchase {% endcomment %}
-            <div class="col-12 col-sm-6 col-lg-4 mb3">
-                {% include atoms/heading.html text="Поръчай сега" size="5" level="3" className="blue-4 mb2" %}
+            <div class="col-12 col-sm-6 col-md-4 mb3">
+                {% include atoms/heading.html text="Поръчай сега" size="5" level="3" className="blue-4
+                mb3" %}
                 <img src="/uploads/cover.jpg" alt="" class="db mb2" style="max-width: 6rem">
-                <a href="/purchase" class="btn dib">Поръчай</a>
+                <a href="/buy/" class="btn dib">Прочети »</a>
             </div>
 
             {% comment %} Sitemap {% endcomment %}
-            <div class="col-12 col-sm-6 col-lg-4 relative">
-                {% include atoms/heading.html text="Карта на сайта" size="5" level="3" className="blue-4 mb2" %}
+            <div class="col-12 col-sm-6 col-md-4 relative">
+                {% include atoms/heading.html text="Карта на сайта" size="5" level="3" className="blue-4
+                mb3" %}
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    {% for nav in site.data.nav %}
+                    <li>
+                        <a href="{{ nav.href }}" class="db mb2">{{ nav.title }}</a>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
-           </div>
-           <p class="tl tc-sm">Всички права са запазени, а това са <a href="#">условията за ползаване</a>.
         </div>
+        <p class="tl tc-sm center">Всички права са запазени, а това са <a href="#">условията за ползаване</a>.
+    </div>
 </footer>

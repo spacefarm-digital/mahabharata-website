@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="post ph3 center">
+    <div class="mw6 center relative flex flex-column justify-center">
+        {% include atoms/heading.html level="1" size="1" text=page.title className="dib center mv3" %}
+        <article class="cms">
+            {{ content }}
+        </article>
+
+        {% comment %} More excerpts {% endcomment %}
+
+        <div class="w-100 flex flex-wrap justify-between mhn2 pv4">
+            {% comment %} Previous {% endcomment %}
+            {% if page.previous %}
+                <div class="ph2">
+                    {% include atoms/heading.html level="2" size="4" text="Предишен откъс" className="db mb3" %}
+                    <a href="{{ page.previous.url}}"  class="db flex-none states-opacity mb3">
+                        {% include molecules/excerpt.html title=page.previous.title %}
+                    </a>
+                </div>
+            {% endif %}
+    
+            {% comment %} Next {% endcomment %}
+            {% if page.next %}
+                <div class="ph2">
+                    {% include atoms/heading.html level="2" size="4" text="Следващ откъс" className="db mb3" %}
+                    <a href="{{ page.next.url }}" class="db flex-none states-opacity">
+                        {% include molecules/excerpt.html title=page.next.title %}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

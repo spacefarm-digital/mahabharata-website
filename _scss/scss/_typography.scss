@@ -27,6 +27,7 @@ body {
 
 p {
   margin-bottom: 1rem;
+  @extend .mw6;
 }
 
 /* Measure is limited to ~66 characters */

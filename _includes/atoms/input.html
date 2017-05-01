@@ -1,4 +1,4 @@
-<fieldset class="dib relative {{include.className}}">
-    <input type="text" placeholder="Text" class="input">
-    <label for="">Text</label>
+<fieldset class="relative {{include.className}}">
+    <input type="{{include.type | default: 'text' }}" placeholder="{{ include.placeholder | default: include.label }}" class="input" name={{include.name}}>
+    <label for="">{{ include.label }}</label>
 </fieldset>

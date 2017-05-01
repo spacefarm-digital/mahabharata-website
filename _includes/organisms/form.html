@@ -1,0 +1,29 @@
+<form class="mw6" action="https://formspree.io/deezel.dude@gmail.com" method="POST">
+    <div class="flex items-center mb2">
+        {% include atoms/stepper.html min="1" max="20" label="Количество" name="quantity" className="mr2" value="1" %}
+        <span class="db mb0 brown-4">Книга</span>
+    </div>
+    
+    {% include atoms/input.html label="Име" name="name"
+    className="mb2" %}
+    
+    {% include atoms/input.html label="Адрес" name="address" className="mb2"
+    %}
+    
+    {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
+
+    <div class="mb3">
+        {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb2"
+        id="form-delivery-address-home" name="shipping-option" value="Доставка до адрес" checked=1 %}
+        
+        {% include atoms/checkbox.html label="Доставка
+        до офис на куриер" type="radio" id="form-delivery-address-office" name="shipping-option" value="Доставка до офис на куриер" %}
+    </div>
+
+    <p>* Disclaimer: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div class="flex justify-between items-center">
+        <p class="mb0 brown-4">Общо: 20лв</p>
+        <button type="submit" class="btn">Купи</button>
+    </div>
+</form>

@@ -121,7 +121,7 @@ label,
 input[type=button],
 input[type=submit],
 input[type=file],
-button {cursor: pointer; background-color: transparent; color: inherit}
+button {cursor: pointer; background-color: transparent; color: inherit; font-family: inherit }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea {margin: 0; padding: 0;}

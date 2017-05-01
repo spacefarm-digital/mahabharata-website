@@ -28,6 +28,11 @@ defaults:
     layout: page
 - scope:
     path: ''
+    type: excerpts
+  values:
+    layout: excerpt
+- scope:
+    path: ''
     type: reviews
   values:
     source: 

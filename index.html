@@ -1,0 +1,26 @@
+---
+title: Начална страница
+layout: default
+---
+
+<div class="ph3 center">
+    <div class="mw7 center pv3">
+        
+        <!-- Page title -->
+        {% include atoms/heading.html level="1" size="1" text="Добре дошли в Махабхарата" className="tc mb3" %}
+
+        <section class="pv2 mw6 center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus reprehenderit eveniet ipsum, dignissimos officia eligendi iure labore eaque. Quibusdam modi perspiciatis enim ipsam nisi, sint unde neque sapiente praesentium consequuntur.</p>
+
+            <div class="flex justify-center">{% include atoms/button.html text="Прочети »" url="/about/" className="mb4" %}</div>
+
+            <img src="/uploads/1.jpg" alt="" class="db mb4">
+
+            <div class="flex flex-column items-center divided-bottom pv4">
+                {% include molecules/blockquote.html text="Един подходящ цитат" size="f3" className="tc mb3" %}
+                {% include atoms/button.html text="Прочети »" url="/reviews/" %}
+            </div>
+        </section>
+
+    </div>
+</div>

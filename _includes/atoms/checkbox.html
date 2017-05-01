@@ -1,5 +1,5 @@
 <fieldset class="{{include.className}}">
-	<input id="{{include.id}}" name="Name" type="{{include.type | default: 'checkbox'}}" class="checkbox" />
+	<input id="{{include.id}}" name="{{ include.name }}" type="{{include.type | default: 'checkbox'}}" {% if include.checked %}checked{% endif %} value="{{ include.value }}" class="checkbox" />
 
 	<label for="{{include.id}}">{{include.label}}</label>
 </fieldset>
