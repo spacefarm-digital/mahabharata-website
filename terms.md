@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Условия за ползване
+layout: post
 ---
 
 ## 1. Предмет
