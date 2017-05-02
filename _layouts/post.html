@@ -4,10 +4,32 @@ layout: default
 
 <div class="post ph3 center pv3">
     <div class="mw6 center relative flex flex-column justify-center">
-        {% include atoms/heading.html level="1" size="1" text=page.title className="dib mb2" %}
+        {% include atoms/heading.html level="1" size="1" text=page.title className="dib mb2"
+        %}
         <span class="db brown-4 mb4">{{ page.date | date: "%d/%m/%Y" }}</span>
-        <article class="cms">
+        <article class="cms mb4">
             {{ content }}
         </article>
+
+        {% include atoms/heading.html text="Още за четене" size="4" level="2" className="mb3 brown-4" %}
+        <div class="row">
+            {% comment %} Previous {% endcomment %} {% if page.previous %}
+            <div class="col-12 col-sm-6">
+                <a href="{{ page.previous.url }}" class="db flex-none states-opacity blue-3">
+                    {{ page.previous.excerpt | remove: '<p>' | remove: '</p>' }}
+                    {% include atoms/heading.html level="3" size="3" text=page.previous.title className="mb2 mt1" %}</p>
+                </a>
+            </div>
+            {% endif %}
+
+            {% comment %} Next {% endcomment %} {% if page.next %}
+            <div class="col-12 col-sm-6">
+                <a href="{{ page.next.url }}" class="db flex-none states-opacity blue-3">
+                    {{ page.next.excerpt | remove: '<p>' | remove: '</p>' }}
+                    {% include atoms/heading.html level="3" size="3" text=page.title className="mb2 mt1" %}</p>
+                </a>
+            </div>
+            {% endif %}
+        </div>
     </div>
 </div>

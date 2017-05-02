@@ -1,10 +1,10 @@
 <figure class="db mw6 relative {{include.className}}">
     <!-- Quote -->
     <blockquote class="brown-4 di mw6 mb3 relative excerpt-quotes {{ include.size | default: 'f5' }}">
-        {{ include.text | remove: '<p>' | remove: '</p>' }}
+        {{ include.text }}
     </blockquote>
     <!-- Author -->
     {% if include.source %}
-        <figcaption class="tr f5">{{include.source}}</figcaption>
+        <figcaption class="tl tr-sm f5 mt3">{{include.source}}</figcaption>
     {% endif %}
 </figure>

@@ -48,15 +48,17 @@ layout: default
                 {% for article in site.posts limit: 2 %}
                     <li class="col-12 col-md-6">
                         <!-- Abstract this into a component -->
-                        <a href="{{ article.url }}">
-                            {{ article.excerpt }}
-                            {% include atoms/heading.html level="3" size="3" text=article.title className="mb2" %}
+                        <a href="{{ article.url }}" class="db states-opacity">
+                            {{ article.excerpt | remove: '<p>' | remove: '</p>' }}
+                            {% include atoms/heading.html level="3" size="3" text=article.title className="mb2 mt1" %}</p>
                         </a>
                     </li>
                 {% endfor %}
             </ul>
 
-            <div class="flex justify-center">{% include atoms/button.html text="Виж всички »" url="/posts/" className="mb4" %}</div>
+            <div class="flex justify-center">
+                {% include atoms/button.html text="Виж всички »" url="/posts/" className="mb4" %}
+            </div>
         </section>
 
     </div>

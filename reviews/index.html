@@ -12,7 +12,7 @@ layout: default
         <section>
             <div class="mw6 center">
                 {% for review in site.reviews %}
-                    {% include molecules/blockquote.html text=review.content source=review.source className="mb4 divided-bottom pb4" size="f5" %}
+                    {% include molecules/blockquote.html text=review.content source=review.source className="mb4 divided-bottom no-last-border pb4" size="f5" %}
                 {% endfor %}
             </div>
         </section>

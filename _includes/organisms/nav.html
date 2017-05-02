@@ -1,22 +1,43 @@
 <nav class="relative mb4 ph3-md">
-	  <div class="mw7 center flex flex-column justify-between-md flex-row-md divided-bottom">
+	<div class="mw7 center flex flex-column justify-between-md flex-row-md divided-bottom">
 
-	    <!-- Logo -->
-	    <a href="/" class="center ma0-md states-opacity blue-3 ph3 pt3 ph0-md pb1">
-            Махабхарата
-        </a>
+		<!-- Logo -->
+		<a href="/" class="center ma0-md states-opacity blue-3 ph3 pt3 ph0-md pb1">
+					Махабхарата
+			</a>
 
-	    <!-- Nav -->
-	    <ul class="flex grey-2 overflow-x-scroll overflow-x-visible-md list">
-            {% for nav in site.data.nav %}
-                <li>
-                	<a href="{{ nav.href }}" class="pa3 db nowrap states-opacity brown-4">{{ nav.title }}</a>
-                </li>
-            {% endfor %}
-						<!-- Buy -->
-						<li>
-							<a href="/buy/" class="pa3 db nowrap states-opacity blue-3 pr0-md">Купи</a>
-						</li>
-	    </ul>
-	  </div>
-	</nav>
+		<!-- Nav -->
+		<ul id="js-nav-list" class="flex grey-2 overflow-x-scroll overflow-x-visible-md list relative">
+			{% for nav in site.data.nav %}
+			<li>
+				<a href="{{ nav.href }}" class="pa3 db nowrap states-opacity brown-4">{{ nav.title }}</a>
+			</li>
+			{% endfor %}
+			<!-- Buy -->
+			<li>
+				<a href="/buy/" class="pa3 pr4 db nowrap states-opacity blue-3 pr0-md">Купи</a>
+			</li>
+		</ul>
+		<div class="fader" id="js-fader" aria-hidden></div>
+	</div>
+</nav>
+
+<script>
+	const nav = document.querySelector('#js-nav-list');
+
+	nav.addEventListener('scroll', function (event) {
+		if (nav.scrollWidth > nav.scrollLeft) {
+			const fader = document.querySelector('#js-fader');
+			if ( (nav.scrollLeft + nav.offsetWidth) > (nav.scrollWidth - 30) ) {
+				fader.style.opacity = '0';
+			}
+			else {
+				fader.style.opacity = '1';
+			}
+		}
+		else {
+			fader.style.opacity = '0';
+		}
+	});
+
+</script>

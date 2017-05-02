@@ -2132,7 +2132,7 @@ img {
     line-height: 1.5; } }
 
 a {
-  color: #297ACC; }
+  color: inherit; }
   a:hover {
     text-decoration: underline; }
 
@@ -4844,14 +4844,29 @@ g#svg-tag, g#questions-2 {
   .excerpt-quotes:before, .cms blockquote p:before {
     content: '“';
     position: absolute;
-    left: -1rem;
+    left: -.75em;
     color: #D4A73F; }
   .excerpt-quotes:after, .cms blockquote p:after {
     content: '”';
     position: absolute;
-    right: -1rem;
+    right: -.75em;
     bottom: 0;
     color: #D4A73F; }
+  .excerpt-quotes p, .cms blockquote p p {
+    display: inline; }
+
+.fader {
+  width: 8rem;
+  display: block;
+  height: 3.5rem;
+  right: 0;
+  top: 2.63rem;
+  position: absolute;
+  background: linear-gradient(to right, rgba(245, 233, 208, 0), #F5E9D0);
+  pointer-events: none; }
+  @media (min-width: 33em) {
+    .fader {
+      display: none; } }
 
 @media (min-width: 62em) {
   th {

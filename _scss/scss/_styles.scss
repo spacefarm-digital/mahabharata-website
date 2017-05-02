@@ -220,15 +220,33 @@ g#svg-tag, g#questions-2 {
   &:before {
     content: '“';
     position: absolute;
-    left: -1rem;
+    left: -.75em;
     color: $gold-2;
   }
 
   &:after {
     content: '”';
     position: absolute;
-    right: -1rem;
+    right: -.75em;
     bottom: 0;
     color: $gold-2;
+  }
+
+  p {
+    display: inline;
+  }
+}
+
+.fader {
+  width: 8rem;
+  display: block;
+  height: 3.5rem;
+  right: 0;
+  top: 2.63rem;
+  position: absolute;
+  background: linear-gradient(to right, rgba($brown-2, 0), $brown-2);
+  pointer-events: none;
+  @media (min-width: 33em) {
+    display: none;
   }
 }
