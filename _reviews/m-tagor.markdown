@@ -1,6 +1,7 @@
 ---
 title: M Tagor
 date: 2017-05-02 11:50:00 Z
+position: 8
 source: Рабиндранат Тагор
 ---
 

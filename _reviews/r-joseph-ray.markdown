@@ -1,6 +1,7 @@
 ---
 title: R Joseph Ray
 date: 2017-05-02 11:47:00 Z
+position: 0
 source: Джоузеф Рей, Atlantis Raising
 ---
 

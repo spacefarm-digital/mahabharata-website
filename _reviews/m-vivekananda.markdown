@@ -1,6 +1,7 @@
 ---
 title: M Vivekananda
 date: 2017-05-02 11:51:00 Z
+position: 3
 source: Свами Вивекананда
 ---
 
