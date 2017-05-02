@@ -4,11 +4,11 @@ fieldset
 }
 
 .input {
+  color: $blue-3;
   padding: .727rem;
   background-color: $gold-1;
   @extend .lh-copy;
   @extend .hover-transition;
-  color: $brown-4;
   -webkit-appearance: none;
 
   &::placeholder {
