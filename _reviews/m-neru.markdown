@@ -1,6 +1,8 @@
 ---
 title: M Neru
 date: 2017-05-02 11:52:00 Z
+categories:
+- book-1
 position: 9
 source: Джавахарлал Неру
 ---
