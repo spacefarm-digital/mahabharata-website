@@ -22,9 +22,9 @@ defaults:
     layout: post
     permalink: "/posts/:title/"
     hero:
-      image:
-      description:
-    excerpt:
+      image: 
+      description: 
+    excerpt: 
 - scope:
     path: ''
     type: pages
