@@ -21,6 +21,10 @@ defaults:
   values:
     layout: post
     permalink: "/posts/:title/"
+    hero:
+      image:
+      description:
+    excerpt:
 - scope:
     path: ''
     type: pages
