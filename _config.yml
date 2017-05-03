@@ -25,7 +25,9 @@ defaults:
       image: 
       description: 
     excerpt: 
-    posts: 
+    posts:
+    -
+    -
 - scope:
     path: ''
     type: pages
