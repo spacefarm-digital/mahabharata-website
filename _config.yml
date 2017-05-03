@@ -26,8 +26,8 @@ defaults:
       description: 
     excerpt: 
     Related posts:
-      first post:
-      second post:
+      first post: 
+      second post: 
 - scope:
     path: ''
     type: pages
