@@ -43,4 +43,17 @@ layout: default
 
         {% include organisms/featured-preview.html title="10 неща, които не знаете за Махабхарата, #3 ще ви съсипе и подлуди" date="20 Април 2017" text="Когато слънцето изгря, хората от Екачакра намериха мъртвото тяло на Бака. Те бяха смаяни от тази лежаща пихтия плът с разтворени очи и уста. Косите на селян..." buttonText="Поръчай" %}
     </div>
+    <div class="ph3 pt4">
+        <ul class="row">
+            {% for article in site.posts %}
+                <div class="col-12 col-md-6">
+                    {% capture theDate %}
+                        {{ article.date | date: "%d/%m/%Y" }}
+                    {% endcapture %}
+
+                    {% include organisms/post-preview.html title=article.title url=article.url excerpt=article.excerpt image=article.hero.image date=theDate %}
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
