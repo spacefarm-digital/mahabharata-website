@@ -16,5 +16,8 @@
 - title: 'Новини'
   href: '/posts/'
 
-- title: 'Купете'
+- title: 'Купете книгата'
   href: '/buy/'
+
+- title: 'Условия за ползване'
+  href: '/terms/'

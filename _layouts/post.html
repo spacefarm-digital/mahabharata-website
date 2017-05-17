@@ -6,7 +6,7 @@ layout: default
     <div class="mw6 center relative flex flex-column justify-center">
 
         <!-- Title + image -->
-        {% include atoms/heading.html level="1" size="1" text=page.title className="dib mb2"
+        {% include atoms/heading.html level="1" size="1" text=page.title className="dib center mb2"
         %}
         <span class="db brown-4 mb3">{{ page.date | date: "%d/%m/%Y" }}</span>
         <img src="{{page.hero.image}}" alt="{{page.hero.description}}" class="db mb3">
@@ -18,32 +18,34 @@ layout: default
     </div>
 
     <!-- See more -->
-    <div>
-        {% include atoms/heading.html text="Още за четене" size="4" level="2" className="mb3 brown-4" %}
-        <div class="row">
-            {% comment %} Previous {% endcomment %}
-            
-            {% if page.previous %}
-            <div class="col-12 col-sm-6">
-                {% capture previousDate %}
-                    {{ page.previous.date | date: "%d/%m/%Y" }}
-                {% endcapture %}
+    {% if page.previous or page.next %}
+        <div>
+            {% include atoms/heading.html text="Още за четене" size="4" level="2" className="mb3 brown-4" %}
+            <div class="row">
+                {% comment %} Previous {% endcomment %}
+                
+                {% if page.previous %}
+                <div class="col-12 col-sm-6">
+                    {% capture previousDate %}
+                        {{ page.previous.date | date: "%d/%m/%Y" }}
+                    {% endcapture %}
 
-                {% include organisms/post-preview.html title=page.previous.title url=page.previous.url excerpt=page.previous.excerpt image=page.previous.hero.image date=previousDate %}
+                    {% include organisms/post-preview.html title=page.previous.title url=page.previous.url excerpt=page.previous.excerpt image=page.previous.hero.image date=previousDate %}
+                </div>
+                {% endif %}
+
+                {% comment %} Next {% endcomment %}
+                {% if page.next %}
+                <div class="col-12 col-sm-6">
+
+                    {% capture nextDate %}
+                        {{ page.next.date | date: "%d/%m/%Y" }}
+                    {% endcapture %}
+
+                    {% include organisms/post-preview.html title=page.next.title url=page.next.url excerpt=page.next.excerpt image=page.next.hero.image date=nextDate %}
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
-
-            {% comment %} Next {% endcomment %}
-            {% if page.next %}
-            <div class="col-12 col-sm-6">
-
-                {% capture nextDate %}
-                    {{ page.next.date | date: "%d/%m/%Y" }}
-                {% endcapture %}
-
-                {% include organisms/post-preview.html title=page.next.title url=page.next.url excerpt=page.next.excerpt image=page.next.hero.image date=nextDate %}
-            </div>
-            {% endif %}
         </div>
-    </div>
+    {% endif %}
 </div>

@@ -1,4 +1,4 @@
-<footer class="ph3 f5 f6-md">
+<footer class="ph3 f5 f6-md brown-4">
     <div class="mw7 center divided-top pt4">
         {% include atoms/heading.html text="Махабхарата" size="4" level="2" className="blue-4
         mb4 tc" %}
@@ -11,30 +11,23 @@
                 <ul>
                     <li>
                         <p>За новини, харесайте страницата
-                            <a href="https://www.facebook.com/Mahabharata.bg/" target="_blank">Махабхарата във Facebook</a>
+                            <a href="https://www.facebook.com/Mahabharata.bg/" target="_blank" class="link">Махабхарата във Facebook</a>
                         </p>
                     </li>
                     <li>
                         <p>За въпроси и мнения, пишете на
-                            <a href="mailto: info@mahabharata.bg">info@mahabharata.bg</a></p>
+                            <a href="mailto: info@mahabharata.bg" class="link">info@mahabharata.bg</a></p>
                     </li>
                     <li>
                         <p>За поръчки и доставки, пишете на
-                            <a href="mailto: shop@mahabharata.bg">shop@mahabharata.bg</a></p>
-                    </li>
-                    <li>
-                        <p>Телефон за контакт:
-                            <a href="tel: 0899601919">0899 60 1919</a></p>
+                            <a href="mailto: shop@mahabharata.bg" class="link">shop@mahabharata.bg</a></p>
                     </li>
                 </ul>
             </div>
 
             {% comment %} Purchase {% endcomment %}
             <div class="col-12 col-sm-6 col-md-4 mb3">
-                {% include atoms/heading.html text="Поръчай сега" size="5" level="3" className="blue-4
-                mb3" %}
-                <img src="/uploads/cover.jpg" alt="" class="db mb2" style="max-width: 6rem">
-                <a href="/buy/" class="btn dib states-opacity">Купи »</a>
+                More content?
             </div>
 
             {% comment %} Sitemap {% endcomment %}
@@ -42,14 +35,14 @@
                 {% include atoms/heading.html text="Карта на сайта" size="5" level="3" className="blue-4
                 mb3" %}
                 <ul>
-                    {% for nav in site.data.nav %}
+                    {% for nav in site.data.sitemap %}
                     <li>
-                        <a href="{{ nav.href }}" class="db mb2">{{ nav.title }}</a>
+                        <a href="{{ nav.href }}" class="db mb2 link">{{ nav.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
             </div>
         </div>
-        <p class="tl tc-sm center f7">Запознайте се с пълните <a href="/terms/">условия за ползване</a>.</p>
+        <p class="tl tc-sm center f7">Запознайте се с пълните <a href="/terms/" class="link">условия за ползване</a>. © Вита Рама, 2017</p>
     </div>
 </footer>

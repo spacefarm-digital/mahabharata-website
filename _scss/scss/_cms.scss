@@ -1,90 +1,92 @@
 .cms {
-	/* Headings */
-	h1, h2, h3, h4, h5, h6 {
-		line-height: 1.25;
-    margin-bottom: .5rem;
-  }
-
-  h1 {
-    font-size: 1.953rem;
-  }
-
-  h2 {
-    font-size: 1.563rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  h4 {
-    font-size: 1rem;;
-  }
-
-  h5 {
-    font-size: .8rem;
-  }
-
-	/* Images */
-	 img {
-		display: block;
-		margin-bottom: 1rem;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 100%;
-	}
-
-	/* Lists */
-	ul, ol, li {
-		position: relative;
-	}
-
-	ul, ol {
-		margin-bottom: 1rem;
-	}
-
-	ul ul, ol ol {
-		padding-left: .5rem;
-	}
-
-  ul {
-    margin-left: 1rem;
-    >li:before {
-      content: '●';
-      left: -1rem;
-      font-size: .75rem;
-      top: .25rem;
-      position: absolute;
-      color: $gold-2;
+    /* Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.25;
+        margin-bottom: .5rem;
     }
-  }
-
-  ol {
-    list-style: none;
-    margin-left: $spacing-medium;
-    counter-reset: i 0;
-    >li:before {
-      @extend .fw8;
-      left: -$spacing-medium;
-      position: absolute;
-      height: 100%;
-      content: counter(i);
-      counter-increment: i;
-      color: $gold-2;
+    h1 {
+        font-size: 1.953rem;
     }
-	}
-
-  /* Blockquotes */
-  blockquote {
-    display: block;
-    font-size: 1.25rem;
-    @extend .mv3;
-    @extend .ph3;
-    color: $brown-4;
-    p {
-      @extend .excerpt-quotes;
-      position: relative;
-      display: inline;
+    h2 {
+        font-size: 1.563rem;
     }
-  }
+    h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+        font-size: 1rem;
+        ;
+    }
+    h5 {
+        font-size: .8rem;
+    }
+    /* Links */
+    a {
+        color: $blue-2;
+    }
+    /* Images */
+    img {
+        display: block;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    /* Lists */
+    ul,
+    ol,
+    li {
+        position: relative;
+    }
+    ul,
+    ol {
+        margin-bottom: 1rem;
+    }
+    ul ul,
+    ol ol {
+        padding-left: .5rem;
+    }
+    ul {
+        margin-left: 1rem;
+        >li:before {
+            content: '●';
+            left: -1rem;
+            font-size: .75rem;
+            top: .25rem;
+            position: absolute;
+            color: $gold-2;
+        }
+    }
+    ol {
+        list-style: none;
+        margin-left: $spacing-medium;
+        counter-reset: i 0;
+        >li:before {
+            @extend .fw8;
+            left: -$spacing-medium;
+            position: absolute;
+            height: 100%;
+            content: counter(i);
+            counter-increment: i;
+            color: $gold-2;
+        }
+    }
+    /* Blockquotes */
+    blockquote {
+        display: block;
+        font-size: 1.25rem;
+        @extend .mv3;
+        @extend .ph3;
+        color: $brown-4;
+        p {
+            @extend .excerpt-quotes;
+            position: relative;
+            display: inline;
+        }
+    }
 }

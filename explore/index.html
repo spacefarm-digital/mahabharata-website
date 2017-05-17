@@ -1,32 +1,21 @@
 ---
-title: Разгледай книгата
+title: Откъси
 layout: default
 ---
 
 <div class="ph3 center">
     <div class="mw7 center">
         <!-- Page title -->
-        {% include atoms/heading.html level="1" size="1" text="Разгледай книгата" className="tc
+        {% include atoms/heading.html level="1" size="1" text=page.title className="tc
         mb3" %}
+        <img src="/uploads/goldengate.jpg" alt="Златният мост" class="mb3">
         
         <!-- Excerpts -->
         <section>
-            {% include atoms/heading.html level="2" size="2" text="Откъси" className="mb2" %}
             <div class="row">
                 <!-- Loop -->
                 {% for excerpt in site.excerpts %}
                     <div class="col-6 col-sm-4 col-lg-3 mb3"><a href="{{excerpt.url}}" class="db states-opacity">{% include molecules/excerpt.html title=excerpt.title %}</a></div>
-                {% endfor %}
-            </div>
-        </section>
-
-        <section>
-            {% include atoms/heading.html level="2" size="2" text="Галерия" className="mb2" %}
-            <div class="row">
-                {% for i in (1..26) %}
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <img src="/uploads/gallery/thumbs/gallery-{{i}}.jpg" alt="" class="w-100 mb2">
-                    </div>
                 {% endfor %}
             </div>
         </section>

@@ -8,19 +8,9 @@
   @extend .tc;
   @extend .nowrap;
   background-color: $gold-2;
+  box-shadow: inset 0 0 0 .25rem $gold-2, inset 0 0 0 calc(.25rem + 2px) $blue-3;
   // button-specific focus-state
   &:focus {
     opacity: .75;
-  }
-}
-
-.ghost-btn {
-  bacground-color: $white;
-  &:hover {
-    opacity: .75;
-  }
-  &:active {
-    background-color: #fff !important;
-    opacity: 1;
   }
 }

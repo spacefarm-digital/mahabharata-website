@@ -21,7 +21,10 @@
             id="form-delivery-address-home" name="shipping-option" value="Доставка до адрес" checked=1 %}
             
             {% include atoms/checkbox.html label="Доставка
-            до офис на куриер" type="radio" id="form-delivery-address-office" name="shipping-option" value="Доставка до офис на куриер" %}
+            до офис на куриер" type="radio" className="mb2" id="form-delivery-address-office-speedy" name="shipping-option" value="Доставка до офис на Спиди" %}
+
+            {% include atoms/checkbox.html label="Доставка
+            до офис на куриер" type="radio" id="form-delivery-address-office-econt" name="shipping-option" value="Доставка до офис на Еконт" %}
         </div>
     
         <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене и ще бъдат уточенени при изпращане на поръчката ви. <a href="/terms/" target="_blank">Пълни условия за ползване.</a> </p>

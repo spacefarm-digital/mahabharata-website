@@ -5,6 +5,10 @@ a {
   }
 }
 
+.link {
+  color: $blue-2;
+}
+
 .arrow {
   &:hover {
     text-decoration: none;

@@ -1,0 +1,41 @@
+---
+title: Галерия
+layout: gallery
+specificCSS:
+    - photoswipe
+    - default-skin
+specificJS:
+    - photoswipe.min
+    - photoswipe-ui-default.min
+    - gallery
+---
+
+<div class="ph3 center">
+    <div class="mw7 center">
+        <!-- Page title -->
+        {% include atoms/heading.html level="1" size="1" text=page.title className="tc
+        mb3" %}
+
+        <section>
+            {% include atoms/heading.html level="2" size="2" text="Категория 1" className="mb2" %}
+            <div class="row">
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/uploads/1.jpg" itemprop="contentUrl" data-size="600x400">
+                            <img src="/uploads/1.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="/uploads/2.jpg" itemprop="contentUrl" data-size="600x400">
+                            <img src="/uploads/2.jpg" itemprop="thumbnail" alt="Image description" />
+                        </a>
+                    </figure>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

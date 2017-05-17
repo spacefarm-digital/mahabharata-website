@@ -23,6 +23,35 @@
   margin-left: auto;
 }
 
+@include sm {
+  .center-sm {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include md {
+  .center-md {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include lg {
+  .center-lg {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include xl {
+  .center-xl {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
 .elipsis {
   white-space: nowrap;
   overflow: hidden;
