@@ -1,5 +1,5 @@
 ---
-title: "За книгата"
+title: За книгата
 layout: post
 ---
 

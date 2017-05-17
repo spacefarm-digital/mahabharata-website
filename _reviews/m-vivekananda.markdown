@@ -1,10 +1,10 @@
 ---
 title: M Vivekananda
 date: 2017-05-02 11:51:00 Z
+categories:
+- original
 position: 3
 source: Свами Вивекананда
-categories: 
- - original
 ---
 
 В този епос е описана древната история на света.

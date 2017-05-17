@@ -1,10 +1,10 @@
 ---
 title: R The Midwest Book Review
 date: 2017-05-02 11:48:00 Z
+categories:
+- retelling
 position: 7
 source: The Midwest Book Review
-categories: 
- - retelling
 ---
 
 Дхарма успешно улавя настроението и величието на един богат и древен епос, като междувременно отдава дължимото на критичните елементи в комплексната история...

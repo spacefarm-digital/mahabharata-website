@@ -1,10 +1,10 @@
 ---
 title: M Neru
 date: 2017-05-02 11:52:00 Z
+categories:
+- original
 position: 9
 source: Джавахарлал Неру
-categories: 
- - original
 ---
 
 Махабхарата е съкровищница, в която можем да открием всички материални и духовни ценности. 
