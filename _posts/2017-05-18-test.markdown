@@ -2,7 +2,8 @@
 title: test
 date: 2017-05-18 10:09:00 Z
 hero:
-  description: Hey, is this the excerpt I'm looking for?
+  image: "/uploads/shade.jpg"
+  description: gddfdsgwsgsrgs
 posts:
 - Добре дошли в сайта
 - Разгледай книгата
