@@ -1,6 +1,7 @@
 ---
 title: банук
 date: 2017-05-18 10:27:00 Z
+excerpt: Test.
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xdJwG_9kF8s" frameborder="0" allowfullscreen></iframe>
