@@ -8,7 +8,6 @@ specificJS:
 - photoswipe.min
 - photoswipe-ui-default.min
 - gallery
-- isotope.min
 ---
 
 <div class="ph3 center">
@@ -23,12 +22,12 @@ specificJS:
                 <div class="mb4 pb3 divided-bottom-fancy no-last-border">
                     {% include atoms/heading.html level="2" size="2" text=category.title className="mb2" %}
                     <p>{{category.description}}</p>
-                    <div class="my-gallery row" itemscope itemtype="http://schema.org/ImageGallery" data-isotope>
+                    <div class="masonry my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
                         <!-- Photo loop -->
                         {% for photo in category.photos %}
-                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="grid-item col-12 col-sm-6 col-md-4 mb3">
-                                <a href="/uploads/gallery/{{category.name}}/full-res/{{photo.name}}.jpg" itemprop="contentUrl" data-size="{{photo.data-size}}">
-                                    <img src="/uploads/gallery/{{category.name}}/thumbs/{{photo.name}}.jpg" itemprop="thumbnail" alt="Image description" />
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="masonry-item">
+                                <a href="/uploads/gallery/{{category.name}}/full-res/{{photo.name}}.jpg" itemprop="contentUrl" data-size="{{photo.data-size}}" class="db">
+                                    <img src="/uploads/gallery/{{category.name}}/thumbs/{{photo.name}}.jpg" itemprop="thumbnail" alt="Image description" class="db mb3" />
                                 </a>
                                 <figcaption class="clip">{{photo.caption}}</figcaption>
                             </figure>

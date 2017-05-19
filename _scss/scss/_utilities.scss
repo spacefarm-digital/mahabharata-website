@@ -207,3 +207,14 @@
     text-decoration: none;
   }
 }
+
+.masonry {
+    column-count: 2;
+    column-gap: 1rem;
+    @include md {
+      column-count: 3;
+    }
+    @include xl {
+      column-count: 4;
+    }
+}
