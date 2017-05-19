@@ -6,39 +6,48 @@ layout: default
 <div class="ph3 center">
     <div class="mw7 center pb3">
         
-        <!-- Page title -->
-        <section class="pb2 mw6 center">
-            {% include atoms/heading.html level="1" size="1" text="Добре дошли в дивния свят на Махабхарата!" className="tc mb3" %}
-
-            <p>Добре дошли в един свят, в който богове и герои бродят по земята, където хората са водени от добродетелни царе, където животът е възприеман като малка стъпка по вечния път към вселени от несвършващо щастие.</p>
-            <p>Това е история, която ще ви омае, дарявайки ви същевремено с проникновени уроци за всеки аспект на живота.</p>
-
-            <div class="flex justify-center w-100 pb4 divided-bottom mb4">{% include atoms/button.html text="Прочетете повече" url="/about/" %}</div>
-
-            <div class="divided-bottom pb4 mb4">
-                <a href="/explore/" class="db relative states-opacity">
-                    <img src="/uploads/sandstorm.jpg" alt="" class="db">
-                    <p class="f3 absolute absolute-center brown-4 z2 arrow tc">Разгледайте книгата</p>
-                    <div class="w-100 h-100 db absolute top-0 left-0 o-30 bg-gold-2 z1"></div>
-                </a>
+        <section class="pb2 mw7 center">
+            <!-- Hero -->
+            <div class="divided-bottom-fancy mb4 pb4">
+                <img src="/uploads/citygates.jpg" alt="Градските порти" class="db mb3">
+                <div class="center mw6">
+                    {% include atoms/heading.html level="1" size="2" text="Добре дошли в дивния свят на Махабхарата!" className="tc mb3 f1-md" %}
+        
+                    <p>Добре дошли в един свят, в който богове и герои бродят по земята, където хората са водени от добродетелни царе, където животът е възприеман като малка стъпка по вечния път към вселени от несвършващо щастие.</p>
+                    <p>Това е история, която ще ви омае, дарявайки ви същевремено с проникновени уроци за всеки аспект на живота.</p>
+                
+                    <div class="flex justify-center w-100">{% include atoms/button.html text="Прочетете повече" url="/about-book/" %}</div>
+                </div>
             </div>
 
-            <div class="flex flex-column items-center divided-bottom pb4 mb4">
-                {% include molecules/blockquote.html text="Рядко се случва древен епос да бъде по подобен начин посрещнат като бестселър. Повествованието тече с лекота, завладяващо и без да прави компромис с високия стил и изказ." size="f3" source="Махеш Наир, India Today" className="mb4 ph3" %}
+            <!-- Explore -->
+            <div class="divided-bottom-fancy pb4 mb4">
+                <img src="/uploads/check-out.jpg" alt="" class="db mb3">
+                <div class="flex justify-center w-100">
+                    {% include atoms/button.html text="Разгледайте галерията" url="/gallery/" %}
+                </div>
+            </div>
 
-                {% include atoms/button.html text="Прочетете още рецензии" url="/reviews/" %}
+            <div class="divided-bottom-fancy mb4 pb4">
+                <div class="flex flex-column items-center">
+                    {% include molecules/blockquote.html text="Рядко се случва древен епос да бъде по подобен начин посрещнат като бестселър. Повествованието тече с лекота, завладяващо и без да прави компромис с високия стил и изказ." size="f3" source="Махеш Наир, India Today" className="mb4 ph3" %}
+    
+                    {% include atoms/button.html text="Прочетете още рецензии" url="/reviews/" %}
+                </div>
             </div>
 
             <!-- Buy incentive -->
-            <div class="flex mhn2 mb4 divided-bottom pb4">
-                <div class="ph2">
-                    <img src="/uploads/shade.jpg" alt="Painting of an indian woman under some shade looking at a remote location." class="db mb2" style="max-width: 6rem">
-                </div>
-                <div class="ph2">
-                    {% include atoms/heading.html text="Къде да намерите книгата" size="4" level="3" className="blue-4
-                    mb2" %}
-                    <p>Можете да закупите Махабхарата, разказана от Кришна Дхарма от нашия сайт и от избрани книжарници в страната.</p>
-                    <a href="/buy/" class="btn dib states-opacity">Научете повече</a>
+            <div class="divided-bottom-fancy mb4 pb4">
+                <div class="flex mhn2 mw6 center">
+                    <div class="ph2">
+                        <img src="/uploads/shade.jpg" alt="Painting of an indian woman under some shade looking at a remote location." class="db mb2" style="max-width: 6rem">
+                    </div>
+                    <div class="ph2">
+                        {% include atoms/heading.html text="Къде да намерите книгата" size="4" level="3" className="blue-4
+                        mb2" %}
+                        <p>“Махабхарата” разказана от Кришна Дхарма можете да намерите в книжарниците или да поръчате от нашия сайт с 20% отстъпка.</p>
+                        <a href="/buy/" class="btn dib states-opacity">Научете повече</a>
+                    </div>
                 </div>
             </div>
             
@@ -46,12 +55,11 @@ layout: default
             {% include atoms/heading.html level="2" size="2" text="Новини" className="mb3" %}
             <ul class="row mb3">
                 {% for article in site.posts limit: 2 %}
+                    {% capture theDate %}
+                        {{ article.date | date: "%d/%m/%Y" }}
+                    {% endcapture %}
                     <li class="col-12 col-md-6">
-                        <!-- Abstract this into a component -->
-                        <a href="{{ article.url }}" class="db states-opacity">
-                            {{ article.excerpt | remove: '<p>' | remove: '</p>' }}
-                            {% include atoms/heading.html level="3" size="3" text=article.title className="mb2 mt1" %}</p>
-                        </a>
+                        {% include organisms/post-preview.html title=article.title date=theDate text=theExcerpt buttonText="Прочетете" image=article.hero.image className="mb4 no-last-border" url=article.url excerpt=article.excerpt %}
                     </li>
                 {% endfor %}
             </ul>

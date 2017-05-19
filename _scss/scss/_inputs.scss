@@ -10,12 +10,10 @@ fieldset
   @extend .lh-copy;
   @extend .hover-transition;
   -webkit-appearance: none;
-
   &::placeholder {
     @extend .animation-transition;
     color: $brown-4;
   }
-
   &:focus + label {
       opacity: 1;
       pointer-events: auto;
@@ -36,7 +34,7 @@ fieldset
   @extend .f6;
   left: 0;
   opacity: 0;
-  background-color: $brown-2;
+  background-color: $brown-1;
   @extend .ph2;
   pointer-events: none;
   color: $brown-4;

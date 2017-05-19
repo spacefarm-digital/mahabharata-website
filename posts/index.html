@@ -15,11 +15,7 @@ layout: default
                {{ article.date | date: "%d/%m/%Y" }}
             {% endcapture %}
 
-            {% capture theExcerpt %}
-               {{ article.excerpt | remove: '<p>' | remove: '</p>' }}
-            {% endcapture %}
-
-            {% include organisms/preview.html title=article.title date=theDate text=theExcerpt buttonText="Прочетете" className="mb4 no-last-border" url=article.url %}
+            {% include organisms/post-preview.html title=article.title date=theDate text=theExcerpt buttonText="Прочетете" image=article.hero.image className="mb4 no-last-border" url=article.url excerpt=article.excerpt %}
         {% endfor %}
     </div>
 </div>

@@ -1,8 +1,9 @@
-<div>
-    <a href="{{include.url}}">
-        <div style="background-image: url('{{include.image}}')" class="h5 db bg-cover bg-center mb2"></div>
-        <p class="f3 lh-title mb2">{{include.title}}</p>
+<div class={{include.className}}>
+    <a href="{{include.url}}" class="no-underline-hover states-opacity db">
+        <div style="background-image: url('{{include.image}}')" class="h5 db cover bg-center mb2"></div>
+        <p class="f3 lh-title mb2 arrow">{{include.title}}</p>
     </a>
     <p class="brown-4 mb1">{{include.date}}</p>
-    <p>{{include.excerpt}}</p>
+    <p class="mb2">{{include.excerpt}}</p>
+    <a href="{{ include.url }}" class="arrow states-opacity link">Прочетете повече</a>
 </div>

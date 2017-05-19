@@ -7,9 +7,9 @@
 		<!-- Nav -->
 		<ul id="js-nav-list" class="flex grey-2 list relative">
 			{% for nav in site.data.nav %}
-			<li>
-				<a href="{{ nav.href }}" class="pa3 db nowrap states-opacity brown-4">{{ nav.title }}</a>
-			</li>
+				<li>
+					<a href="{{ nav.href }}" class="pa3 db nowrap states-opacity {% if page.url == nav.href %}blue-3{%else%}brown-4{%endif%}">{{ nav.title }}</a>
+				</li>
 			{% endfor %}
 		</ul>
 		<div class="fader" id="js-fader" aria-hidden></div>

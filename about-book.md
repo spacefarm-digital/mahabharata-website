@@ -2,6 +2,7 @@
 title: За книгата
 layout: post
 ---
+![Skyline](/uploads/skyline.jpg)
 
 “Махабхарата” разказана от Кришна Дхарма е автентична интерпретация на превода на оригиналния санскритски текст от Манматха Нат Дутт. 
 Високо оценена от критиката и читателите, книгата е финалист за престижната наградa на [Independent Book Publishers Associations (IBPA)](http://www.ibpa-online.org/): [Benjamin Franklin Award](http://ibpabenjaminfranklinawards.com/) и е преиздавана девет пъти.

@@ -8,34 +8,34 @@ specificJS:
 - photoswipe.min
 - photoswipe-ui-default.min
 - gallery
+- isotope.min
 ---
 
 <div class="ph3 center">
     <div class="mw7 center">
         <!-- Page title -->
         {% include atoms/heading.html level="1" size="1" text=page.title className="tc
-        mb3" %}
+        mb4" %}
 
         <section>
-            {% include atoms/heading.html level="2" size="2" text="Категория 1" className="mb2" %}
-            <div class="row">
-                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="/uploads/1.jpg" itemprop="contentUrl" data-size="600x400">
-                            <img src="/uploads/1.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                    </figure>
-
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="/uploads/2.jpg" itemprop="contentUrl" data-size="600x400">
-                            <img src="/uploads/2.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                    </figure>
-
-
+            <!-- Loop categories -->
+            {% for category in site.data.gallery.categories %}
+                <div class="mb4 pb3 divided-bottom-fancy no-last-border">
+                    {% include atoms/heading.html level="2" size="2" text=category.title className="mb2" %}
+                    <p>{{category.description}}</p>
+                    <div class="my-gallery row" itemscope itemtype="http://schema.org/ImageGallery" data-isotope>
+                        <!-- Photo loop -->
+                        {% for photo in category.photos %}
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="grid-item col-12 col-sm-6 col-md-4 mb3">
+                                <a href="/uploads/gallery/{{category.name}}/full-res/{{photo.name}}.jpg" itemprop="contentUrl" data-size="{{photo.data-size}}">
+                                    <img src="/uploads/gallery/{{category.name}}/thumbs/{{photo.name}}.jpg" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption class="clip">{{photo.caption}}</figcaption>
+                            </figure>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
+            {% endfor %}
         </section>
     </div>
 </div>

@@ -1,11 +1,11 @@
 <footer class="ph3 f5 f6-md brown-4">
     <div class="mw7 center divided-top pt4">
-        {% include atoms/heading.html text="Махабхарата" size="4" level="2" className="blue-4
-        mb4 tc" %}
-
         <div class="row mb4">
+            <div class="col-12 col-sm-4 mb4 mb0-sm">
+                <a href="/" class="blue-3">{% include atoms/heading.html text="Махабхарата" size="4" level="2" className="blue-4 tc tl-sm" %}</a>
+            </div>
             {% comment %} Contact links {% endcomment %}
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-4 mb3 mb0-sm">
                 {% include atoms/heading.html text="Контакт с нас" size="5" level="3" className="blue-4
                 mb3" %}
                 <ul>
@@ -15,7 +15,7 @@
                         </p>
                     </li>
                     <li>
-                        <p>За въпроси и мнения, пишете на
+                        <p>За информация и въпроси, пишете на
                             <a href="mailto: info@mahabharata.bg" class="link">info@mahabharata.bg</a></p>
                     </li>
                     <li>
@@ -25,13 +25,8 @@
                 </ul>
             </div>
 
-            {% comment %} Purchase {% endcomment %}
-            <div class="col-12 col-sm-6 col-md-4 mb3">
-                More content?
-            </div>
-
             {% comment %} Sitemap {% endcomment %}
-            <div class="col-12 col-sm-6 col-md-4 relative">
+            <div class="col-12 col-sm-4 relative">
                 {% include atoms/heading.html text="Карта на сайта" size="5" level="3" className="blue-4
                 mb3" %}
                 <ul>
@@ -43,6 +38,6 @@
                 </ul>
             </div>
         </div>
-        <p class="tl tc-sm center f7">Запознайте се с пълните <a href="/terms/" class="link">условия за ползване</a>. © Вита Рама, 2017</p>
+        <p class="tl tc-sm center f7">© Вита Рама, 2017</p>
     </div>
 </footer>

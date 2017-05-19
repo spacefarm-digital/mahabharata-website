@@ -1,5 +1,5 @@
-<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/deezel.dude@gmail.com" method="POST" style="height: 0px;">
-   <div class="db divided-bottom pb4 w-100">
+<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/shop@mahabharata.bg" method="POST" style="height: 0px;">
+   <div class="db pb4 w-100">
         <!-- Title -->
         <span class="f4 lh-title mb2 db">Попълни своите детайли:</span>
         
@@ -13,25 +13,35 @@
         
         {% include atoms/input.html label="Адрес" name="address" className="mb2"
         %}
+
+        {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
         
         {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
     
         <div class="mb3">
-            {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb2"
-            id="form-delivery-address-home" name="shipping-option" value="Доставка до адрес" checked=1 %}
+            <p class="mb2 brown-4">Вид доставка:</p>
+            {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
+            id="form-delivery-address-office" name="shipping-option-address" value="Доставка до офис на куриер" checked="1" %}
+
+            {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
+            id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
             
+            <p class="mb2 brown-4">Куриерска услуга:</p>
             {% include atoms/checkbox.html label="Доставка
-            до офис на куриер" type="radio" className="mb2" id="form-delivery-address-office-speedy" name="shipping-option" value="Доставка до офис на Спиди" %}
+            до офис на Еконт" type="radio" id="form-delivery-address-office-econt" name="shipping-option-brand" className="mb2" value="Доставка до офис на Еконт" checked="1" %}
 
             {% include atoms/checkbox.html label="Доставка
-            до офис на куриер" type="radio" id="form-delivery-address-office-econt" name="shipping-option" value="Доставка до офис на Еконт" %}
+            до офис на Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Доставка до офис на Спиди" %}
+
         </div>
-    
-        <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене и ще бъдат уточенени при изпращане на поръчката ви. <a href="/terms/" target="_blank">Пълни условия за ползване.</a> </p>
+        
+        <!-- Disclaimer -->
+        <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене и ще бъдат уточенени при изпращане на поръчката ви. <a href="/delivery-info/" class="link" target="_blank">Цени на куриерски услуги</a>.</p>
     
         <div class="flex justify-between items-center">
-            <!--<p class="mb0 brown-4">Общо: 20лв</p>-->
-            <button type="submit" class="btn">Купи</button>
+            <button type="submit" class="btn states-opacity">Купете</button>
         </div>
    </div>
+
+   <input type="text" name="_gotcha" style="display:none" />
 </form>

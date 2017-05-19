@@ -165,5 +165,45 @@
 .no-last-border {
   &:last-of-type() {
     border-bottom: 0;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.divided-bottom-fancy {
+  border-bottom: 2px solid $brown-3;
+  position: relative;
+  &:before {
+    content: '«';
+    font-size: 1.5rem;
+    padding-right: .25rem;
+    color: $brown-3;
+    position: absolute;
+    background-color: $brown-2;
+    display: block;
+    bottom: -.75rem;
+    line-height: 1.15;
+  }
+  &:after {
+    content: '»';
+    font-size: 1.5rem;
+    padding-left: .25rem;
+    position: absolute;
+    color: $brown-3;
+    background-color: $brown-2;
+    display: block;
+    right: 0;
+    bottom: -.75rem;
+    line-height: 1.15;
+  }
+}
+
+.no-underline-hover {
+  &:hover {
+    text-decoration: none;
   }
 }

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post ph3 center">
-    <div class="mw6 center relative flex flex-column justify-center">
+    <div class="mw6 center relative flex flex-column justify-center bg-brown-1 ph3 ph4-md ph5-lg pv4 mb3">
         {% include atoms/heading.html level="1" size="1" text=page.title className="dib center mv3" %}
         <article class="cms">
             {{ content }}
@@ -11,7 +11,7 @@ layout: default
 
         {% comment %} More excerpts {% endcomment %}
 
-        <div class="w-100 flex flex-wrap justify-between mhn2 pv4">
+        <div class="w-100 flex flex-wrap justify-between mhn2">
             {% comment %} Previous {% endcomment %}
             {% if page.previous %}
                 <div class="ph2">
