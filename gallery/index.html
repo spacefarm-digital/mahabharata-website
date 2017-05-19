@@ -20,9 +20,11 @@ specificJS:
             <!-- Loop categories -->
             {% for category in site.data.gallery.categories %}
                 <div class="mb4 pb3 divided-bottom-fancy no-last-border">
-                    {% include atoms/heading.html level="2" size="2" text=category.title className="mb2" %}
-                    <p>{{category.description}}</p>
-                    <div class="masonry my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <div class="center mw6 mb4">
+                        {% include atoms/heading.html level="2" size="2" text=category.title className="mb2" %}
+                        <p>{{category.description}}</p>
+                    </div>
+                    <div class="masonry my-gallery pb4" itemscope itemtype="http://schema.org/ImageGallery">
                         <!-- Photo loop -->
                         {% for photo in category.photos %}
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="masonry-item">
