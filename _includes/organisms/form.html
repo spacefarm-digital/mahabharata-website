@@ -1,4 +1,4 @@
-<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/shop@mahabharata.bg" method="POST" style="height: 0px;">
+﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/shop@mahabharata.bg" method="POST" style="height: 0px;">
    <div class="db pb4 w-100">
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Попълнете своите детайли:</span>
@@ -27,11 +27,9 @@
             id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
             
             <p class="mb2 brown-4">Куриерска услуга:</p>
-            {% include atoms/checkbox.html label="Доставка
-            до офис на Еконт" type="radio" id="form-delivery-address-office-econt" name="shipping-option-brand" className="mb2" value="Доставка до офис на Еконт" checked="1" %}
+            {% include atoms/checkbox.html label="Еконт" type="radio" id="form-delivery-address-office-econt" name="shipping-option-brand" className="mb2" value="Еконт" checked="1" %}
 
-            {% include atoms/checkbox.html label="Доставка
-            до офис на Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Доставка до офис на Спиди" %}
+            {% include atoms/checkbox.html label="Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Спиди" %}
 
         </div>
         
