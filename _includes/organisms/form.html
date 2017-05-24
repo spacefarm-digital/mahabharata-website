@@ -9,30 +9,30 @@
             {% include atoms/stepper.html min="1" max="20" label="Количество" name="quantity" value="1" %}
         </div>
         
-        {% include atoms/input.html label="Име" name="name" className="mb2" %}
-        
-{% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
-        {% include atoms/input.html label="Адрес: Личен или Офис куриер" name="address" className="mb2" %}
-
-        {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
-        
-        {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
-       
-        <div class="mb3">
-            <p class="mb2 brown-4">Вид доставка:</p>
-            {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
+          <p class="mb2 brown-4">Вид доставка:</p>
+                    {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
+            id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
+         {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
             id="form-delivery-address-office" name="shipping-option-address" value="Доставка до офис на куриер" checked="1" %}
 
-            {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
-            id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
-            
+       
             <p class="mb2 brown-4">Куриерска услуга:</p>
             {% include atoms/checkbox.html label="Еконт" type="radio" id="form-delivery-address-office-econt" name="shipping-option-brand" className="mb2" value="Еконт" checked="1" %}
 
             {% include atoms/checkbox.html label="Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Спиди" %}
 
         </div>
+        {% include atoms/input.html label="Име" name="name" className="mb2" %}
         
+{% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
+        {% include atoms/input.html label="Адрес: личен или офис куриер" name="address" className="mb2" %}
+
+        {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
+        
+        {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
+       
+        <div class="mb3">
+          
         <!-- Disclaimer -->
         <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене и ще бъдат уточенени при изпращане на поръчката ви. <a href="/delivery-info/" class="link" target="_blank">Цени на куриерски услуги</a>.</p>
 
