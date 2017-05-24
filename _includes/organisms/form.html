@@ -3,13 +3,7 @@
    <div class="db pb4 w-100">
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Попълнете своите детайли:</span>
-        
-        <div class="flex items-center mb2">
-            <span class="db mb0 brown-4 mr2">Количество:</span>
-            {% include atoms/stepper.html min="1" max="20" label="Количество" name="quantity" value="1" %}
-        </div>
-        
-          <p class="mb2 brown-4">Вид доставка:</p>
+       <p class="mb2 brown-4">Вид доставка:</p>
                     {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
             id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
          {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
@@ -22,7 +16,11 @@
             {% include atoms/checkbox.html label="Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Спиди" %}
 
         </div>
-        {% include atoms/input.html label="Име" name="name" className="mb2" %}
+    <div class="flex items-center mb2">
+            <span class="db mb0 brown-4 mr2">Количество:</span>
+            {% include atoms/stepper.html min="1" max="20" label="Количество" name="quantity" value="1" %}
+        </div>
+       {% include atoms/input.html label="Име" name="name" className="mb2" %}
         
 {% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
         {% include atoms/input.html label="Адрес: личен или офис куриер" name="address" className="mb2" %}
