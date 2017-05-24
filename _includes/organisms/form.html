@@ -11,13 +11,12 @@
         
         {% include atoms/input.html label="Име" name="name" className="mb2" %}
         
-        {% include atoms/input.html label="Адрес" name="address" className="mb2"%}
+{% include atoms/input.html label="Град" name="city" type="city" className="mb3" %}
+        {% include atoms/input.html label="Офис на куриер или Адрес за доставка" name="address" className="mb2" %}
 
         {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
         
         {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
-       
-        {% include atoms/input.html label="Град" name="city" type="city" className="mb3" %}
        
         <div class="mb3">
             <p class="mb2 brown-4">Вид доставка:</p>
