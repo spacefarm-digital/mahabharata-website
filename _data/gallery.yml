@@ -1,0 +1,220 @@
+categories:
+  - title: Картини на Джампаоло Томасети
+    name: tomasetti
+    description: <p>За корицата на българското издание на “Махабхарата” разказана от Кришна Дхарма, са ползвани три картини от колекцията “Mahabharata” на италианския художник Джампаоло Томасети. </p><p>Джампаоло Томасети е известен художник, портретист, илюстратор, стенописец и реставратор. Той започва своята артистична кариера с реставрация на стари сгради, стенописи и изработка на копия и репродукции на известни картини от европейските музеи.</p><p>В началото на 80-те години Джампаоло Томасети става съосновател и член на The International Vedic Art Academy. През 2003 г., след внимателно изучаване и проучване на “Махабхарата”, Джампаоло Томасети започва работа по мащабен проект посветен на великия духовен епос. След 12 г. той завършва своята колекция от 25 величествени картини, пресъздаващи основни моменти от “Махабхарата”.</p><p>Картините на Джампаоло Томасети са собственост на <a href="http://mosabelgium.com/" class="link" target="blank">Museum of Sacred Art (MOSA)</a> и могат да бъдат видени във <a href="http://www.villavrindavana.org/en/gallery-mosa-museum-of-sacred-art/" class="link" target="blank">Вила Вриндавана</a>, Флоренция, Италия.</p>
+    photos:
+    - name: 'shade'
+      caption: 'Кунти и Сурия'
+      data-size: '1600x2868'
+
+    - name: 'goldengate'
+      caption: 'Пандавите влизат в Хастинапура'
+      data-size: '1920x961'
+
+    - name: 'forest'
+      caption: 'Хидимби'
+      data-size: '1600x2142'
+
+    - name: 'standup'
+      caption: 'Кунти и Драупади'
+      data-size: '1600x2049'
+
+    - name: 'balcony'
+      caption: 'Кришна в Иднрапрастха'
+      data-size: '1920x1555'
+
+    - name: 'citygates'
+      caption: 'Посрещане в Дварака'
+      data-size: '1920x769'
+
+    - name: 'high'
+      caption: 'Моята Дварака'
+      data-size: '1920x1471'
+
+    - name: 'laser'
+      caption: 'Шишупала'
+      data-size: '1920x1381'
+
+    - name: 'pachisi'
+      caption: 'Играта на зарове'
+      data-size: '1600x1291'
+
+    - name: 'crying'
+      caption: 'Кришна и Драупади'
+      data-size: '1600x2115'
+
+    - name: 'hike'
+      caption: 'Към Бадарика-ашрам'
+      data-size: '1600x2321'
+
+    - name: 'monkey'
+      caption: 'Бхима и Хануман'
+      data-size: '1600x2092'
+
+    - name: 'chariot'
+      caption: 'Странният колесничар'
+      data-size: '1920x1551'
+
+    - name: 'bigbed'
+      caption: 'Изборът'
+      data-size: '1920x1446'
+
+    - name: 'trip'
+      caption: 'Вселенската форма Вишварупа'
+      data-size: '1600x1614'
+
+    - name: 'sadface'
+      caption: 'Карна и Кунти'
+      data-size: '1600x1610'
+
+    - name: 'strategy'
+      caption: 'В шатрата'
+      data-size: '1920x1631'
+
+    - name: 'rideon'
+      caption: 'Партха-саратхи'
+      data-size: '1920x1283'
+
+    - name: 'sandstorm'
+      caption: 'Устремлението на героя'
+      data-size: '1920x1282'
+
+    - name: 'bang'
+      caption: 'Падането на героя'
+      data-size: '1600x2718'
+
+    - name: 'wheelofsteel'
+      caption: 'Младият герой Абхиманю'
+      data-size: '1920x965'
+
+    - name: 'battle'
+      caption: 'Бхима и Бхагадатта'
+      data-size: '1920x1276'
+
+    - name: 'heavy'
+      caption: 'Колелото на Карна'
+      data-size: '1600x1984'
+
+    - name: 'archer'
+      caption: 'Простреляй го сега!'
+      data-size: '1600x2365'
+
+  - title: Илюстрации към “Махабхарата” разказана от Кришна Дхарма
+    description: “Махабхарата” разказана от Кришна Дхарма, съдържа 20 черно-бели илюстрации.
+    name: book
+    photos:
+    - name: 'name'
+      caption: 'От днес насетне неговото име ще бъде Бхишма!'
+      data-size: '1600x2143'
+
+    - name: 'baby'
+      caption: 'Със сълзи на очи, Кунти бутна бебето в течащата река'
+      data-size: '1600x2155'
+
+    - name: 'gladiator'
+      caption: 'Арджуна коленичи и се прицели в мишената'
+      data-size: '1600x2234'
+
+    - name: 'king'
+      caption: 'Юдхищхира свика министрите и съветниците си в голямата съвещателна зала '
+      data-size: '1600x2063'
+
+    - name: 'fountain'
+      caption: 'Напълно облечен, Дурьодхана падна право във водата'
+      data-size: '1600x2082'
+
+    - name: 'monster'
+      caption: 'Пандавите срещнали ужасяващ ракшас с пламтящи очи'
+      data-size: '1600x2100'
+
+    - name: 'tail'
+      caption: 'Моля те, премести опашката ми и сам си направи път.'
+      data-size: '1600x2232'
+
+    - name: 'peacock'
+      caption: 'В единия край Кришна намери парченце ориз и зеленчук'
+      data-size: '1600x2238'
+
+    - name: 'bathing'
+      caption: 'Юдхищхира се доближи до водата и захвърляйки бронята си, навлезе в нея'
+      data-size: '1600x2077'
+
+    - name: 'weapons'
+      caption: 'Бхуминджая внимателно вдигна блестящите оръжия'
+      data-size: '1600x2191'
+
+    - name: 'snakes'
+      caption: 'О, сине на Кунти, какво избираш?'
+      data-size: '1600x2017'
+
+    - name: 'whysosad'
+      caption: 'Чувства на обич се надигаха в сърцето на Карна, но той се бореше да ги овладее.'
+      data-size: '1600x2147'
+
+    - name: 'sadride'
+      caption: 'Арджуна бе завлядян от състрадание'
+      data-size: '1600x2141'
+
+    - name: 'council'
+      caption: 'О, господарю, моля те кажи ни как можем да те убием'
+      data-size: '1600x2067'
+
+    - name: 'beatup'
+      caption: 'Докато се опитваше да се изправи на крака, Дурджая го удари отгоре по главата с цялата си сила.'
+      data-size: '1600x2030'
+
+    - name: 'hairpull'
+      caption: 'Като сграбчи завързаната на възел коса на темето му, той го дръпна и с широк замах на меча си отсече главата му'
+      data-size: '1600x2135'
+
+    - name: 'pain'
+      caption: 'Лицето на Карна се покри с капки пот, докато се бореше с колелото'
+      data-size: '1600x2191'
+
+    - name: 'duel'
+      caption: 'Разгневени, Бхима и Дурьодхана се втурнаха един срещу друг с високо вдигнати боздугани'
+      data-size: '1600x2319'
+
+    - name: 'pow'
+      caption: 'Ашватхама трябваше и да бъде убит, и да не бъде убит'
+      data-size: '1600x2157'
+
+    - name: 'vista'
+      caption: 'Уморени и излинели, Пандавите се изкачваха с трудност'
+      data-size: '1600x2157'
+
+  - title: Вдъхновени от “Махабхарата”
+    description: Хилядолетия “Махабхарата“ вълнува умовете на хората. Със своя основен сюжет и придружаващи го истории, морални и етически идеи, епосът е източник на вдъхновение за скулптори, художници, архитекти, драматурзи, музиканти, режисьори.
+    name: inspired
+    photos:
+      - name: 'garden'
+        caption: 'Шантану и Ганга'
+        data-size: '1600x1902'
+
+      - name: 'epiphany'
+        caption: 'Събличането на Драупади'
+        data-size: '1600x2152'
+
+      - name: 'wiseman'
+        caption: 'Санджая и Дхритаращра'
+        data-size: '1600x2166'
+
+      - name: 'attack'
+        caption: 'Кришна атакува Бхишма'
+        data-size: '1024x768'
+
+      - name: 'children'
+        caption: 'Ядавите оскърбяват мъдреците'
+        data-size: '1600x2090'
+
+      - name: 'stickfight'
+        caption: 'Войната между Ядавите'
+        data-size: '1600x1996'
+
+      - name: 'vishvarupa'
+        caption: 'Вишварупа'
+        data-size: '1600x2090'
+
+      - name: 'skyline'
+        caption: 'Брахма, Вишну и Шива'
+        data-size: '1920x1228'
