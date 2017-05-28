@@ -15,17 +15,16 @@ excerpt: |-
 
 Тук ще намерите информация:
 
-· [За книгата](http://http://www.mahabharata.bg/about-book/) “Махабхарата” разказана от Кришна Дхарма, [Как да я поръчате](http://http://www.mahabharata.bg/buy/) онлайн и Откъде да я закупите
+· [За книгата](http://www.mahabharata.bg/about-book/) “Махабхарата” разказана от Кришна Дхарма, [Как да я поръчате](http://www.mahabharata.bg/buy/) онлайн и Откъде да я закупите
 
-· [За автора](http://http://www.mahabharata.bg/about-author/) на “Махабхарата” – мъдреца Вясад
-ева и за Разказвача - Кришна Дхарма
+· [За автора](http://www.mahabharata.bg/about-author/) на “Махабхарата” – мъдреца Вясадева и за Разказвача - Кришна Дхарма
 
-· [Откъси](http://http://www.mahabharata.bg/explore/) от книгата
+· [Откъси](http://www.mahabharata.bg/explore/) от книгата
 
-· [Галерия](http://http://www.mahabharata.bg/gallery/) с картини и илюстрации вдъхновенни от “Махабхарата”
+· [Галерия](http://www.mahabharata.bg/gallery/) с картини и илюстрации вдъхновенни от “Махабхарата”
 
-· [Рецензии](http://http://www.mahabharata.bg/reviews/) 
+· [Рецензии](http://www.mahabharata.bg/reviews/)
 
-· [Новини](http://http://www.mahabharata.bg/posts/) за предстоящи събития.
+· [Новини](http://www.mahabharata.bg/posts/) за предстоящи събития.
 
 Поемете с нас към вълнуващия, величествен, възвишен и непреходен свят на “Махабхарата“!
