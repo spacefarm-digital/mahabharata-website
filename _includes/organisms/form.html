@@ -1,20 +1,19 @@
-﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://script.google.com/macros/s/AKfycbyZJ56LgP01sS38v96EEcZVLlgse2PwewcCGOtpumHZNJAXjWY4/exec"
-      method="POST" style="height: 0px;" onsubmit="return validateForm();" >
-	  <input type="hidden" name="redirect" value="/delivery-info/" class="link" target="_blank">
+﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/shop@mahabharata.bg"
+      method="POST" style="height: 0px;" onsubmit="return validateForm();">
     <div class="db pb4 w-100" style="margin-top: -20px;">
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Попълнете своите детайли:</span>
         <p class="mb2 brown-4">Вид доставка:</p>
         {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
-        id="form-delivery-address-home" name="delivery" value="Доставка до адрес" %}
+        id="form-delivery-address-home" name="shipping-option-address" value="Доставка до адрес" %}
         {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
-        id="form-delivery-address-office" name="delivery" value="Доставка до офис на куриер" checked="1" %}
+        id="form-delivery-address-office" name="shipping-option-address" value="Доставка до офис на куриер" checked="1" %}
 
 
         <p class="mb2 brown-4">Куриерска услуга:</p>
-        {% include atoms/checkbox.html label="Еконт" type="radio" id="form-delivery-address-office-econt" name="courier" className="mb2" value="Еконт" checked="1" %}
+        {% include atoms/checkbox.html label="Еконт" type="radio" id="form-delivery-address-office-econt" name="shipping-option-brand" className="mb2" value="Еконт" checked="1" %}
 
-        {% include atoms/checkbox.html label="Спиди" type="radio" id="form-delivery-address-office-speedy" name="courier" value="Спиди" %}
+        {% include atoms/checkbox.html label="Спиди" type="radio" id="form-delivery-address-office-speedy" name="shipping-option-brand" value="Спиди" %}
 
     </div>
     <div class="flex items-center mb2">
@@ -39,7 +38,9 @@
             <button type="submit" class="btn states-opacity">Купете</button>
         </div>
     </div>
-</form>
+	<input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_cc" value="shop.mahabharata@gmail.com" />
+ </form>
 
 <script>
     function validateForm() {
@@ -56,16 +57,3 @@
         return true;
     }
 </script>
- 
- 
- <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message">
-    <h2>Благодарим ви! Ще потвърдим поръчката ви скоро.</h2>
-  </div>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <!-- <script data-cfasync="false" type="text/javascript"
-  src="/form-submission-handler.js"></script> -->
-<!-- END -->
