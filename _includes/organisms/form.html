@@ -1,5 +1,5 @@
-﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://script.google.com/macros/s/AKfycbxBYPHscdHlobJwQleplrqM65_agoKzsKRz8U8-m6_X69V_S00s/exec"
-      method="POST" style="height: 0px;" onsubmit="return validateForm();">
+﻿<body>
+<form id="js-purchase-form" method="POST" class="animation-transition overflow-hidden" action="https://script.google.com/macros/s/AKfycbxBYPHscdHlobJwQleplrqM65_agoKzsKRz8U8-m6_X69V_S00s/exec">
     <div class="db pb4 w-100" style="margin-top: -20px;">
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Попълнете своите детайли:</span>
@@ -42,22 +42,6 @@
 </div>
   </form>
 
-<script>
-    function validateForm() {
-        if (document.getElementsByName("quantity")[0].value < 1 ||
-                document.getElementsByName("name")[0].value === '' ||
-                document.getElementsByName("address")[0].value === '' ||
-                document.getElementsByName("email")[0].value === '' ||
-                document.getElementsByName("phone")[0].value === '' ||
-                document.getElementsByName("city")[0].value === ''
-        ) {
-            alert('Моля попълнете всички полета');
-            return false;
-        }
-        return true;
-    }
-</script>
-
  <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
     <h2><em>Thanks</em> for contacting us!
@@ -70,4 +54,4 @@
   <!-- <script data-cfasync="false" type="text/javascript"
   src="/form-submission-handler.js"></script> -->
 <!-- END -->
-
+</body>
