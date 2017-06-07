@@ -1,4 +1,4 @@
-﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://formspree.io/shop@mahabharata.bg"
+﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action=""https://script.google.com/macros/s/AKfycbyZJ56LgP01sS38v96EEcZVLlgse2PwewcCGOtpumHZNJAXjWY4/exec""
       method="POST" style="height: 0px;" onsubmit="return validateForm();">
     <div class="db pb4 w-100" style="margin-top: -20px;">
         <!-- Title -->
@@ -38,9 +38,9 @@
             <button type="submit" class="btn states-opacity">Купете</button>
         </div>
     </div>
-	<input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_cc" value="shop.mahabharata@gmail.com" />
- </form>
+
+    <input type="text" name="_gotcha" style="display:none" />
+</form>
 
 <script>
     function validateForm() {
@@ -57,3 +57,15 @@
         return true;
     }
 </script>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2>Благодарим ви! Ще потвърдим поръчката ви скоро.</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
