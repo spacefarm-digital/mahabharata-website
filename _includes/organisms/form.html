@@ -24,7 +24,7 @@
     {% include atoms/input.html label="Име" name="name" className="mb2" %}
 
     {% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
-    {% include atoms/input.html label="Адрес за доставка или офис на куриер" name="address" className="mb2" %}
+    {% include atoms/input.html id="dynamic-address" label="Адрес на офис на куриер" name="address" className="mb2" %}
 
     {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
 
@@ -41,7 +41,15 @@
     </div>
 </form>
 
-<script>	
+<script>
+	$("#form-delivery-address-home").on('change', function () {
+		$("#dynamic-address").attr("placeholder", "Доставка до адрес");
+	});
+	
+	$("#form-delivery-address-office").on('change', function () {
+		$("#dynamic-address").attr("placeholder", "Доставка до офис на куриер");
+	});
+
 	function submitCustom() {
 		if (true == validateForm()) {
 			$.ajax({
@@ -58,7 +66,8 @@
 					'phone' : document.querySelector("input[name=phone]").value
 				},
 				success: function(result){
-					console.log('Success', result);
+					//console.log('Success', result);
+					document.getElementById("js-purchase-form").style.display = "none";
 					document.getElementById("thankyou_message").style.display = "block";
 				},
 				fail: function(e){
@@ -70,7 +79,7 @@
 		return false;
 	}
 
-    function validateForm() {return true;
+    function validateForm() {
         if (document.getElementsByName("quantity")[0].value < 1 ||
                 document.getElementsByName("name")[0].value === '' ||
                 document.getElementsByName("address")[0].value === '' ||
@@ -87,7 +96,7 @@
  
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
-    <h2>Благодарим ви! Ще потвърдим поръчката ви скоро.</h2>
+    <h2>Благодарим ви! Ще потвърдим поръчката Ви до 12 ч.</h2>
   </div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
