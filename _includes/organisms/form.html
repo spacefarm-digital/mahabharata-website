@@ -24,6 +24,7 @@
     {% include atoms/input.html label="Име" name="name" className="mb2" %}
 
     {% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
+
     {% include atoms/input.html id="dynamic-address" label="Адрес на доставката" name="address" className="mb2" %}
 
     {% include atoms/input.html label="Имейл" name="email" type="email" className="mb2" %}
@@ -34,19 +35,21 @@
 
         <!-- Disclaimer -->
         <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене. <a href="/delivery-info/" class="link" target="_blank">Цени на куриерски услуги</a>.</p>
-		        <div class="flex justify-between items-center">
+		<div class="flex justify-between items-center">
             <button type="button" class="btn states-opacity" onclick="submitCustom()">Купете</button>			
         </div>
     </div>
 </form>
 
 <script>
-	$("#form-delivery-address-home").on('change', function () {
-		$("#dynamic-address").attr("placeholder", "Доставка до адрес");
-	});
-	
-	$("#form-delivery-address-office").on('change', function () {
-		$("#dynamic-address").attr("placeholder", "Доставка до офис на куриер");
+	$( document ).ready(function() {
+		$("#form-delivery-address-home").on('change', function () {
+			$("#dynamic-address").attr("placeholder", "Адрес на получател");
+		});	
+		
+		$("#form-delivery-address-office").on('change', function () {
+			$("#dynamic-address").attr("placeholder", "Адрес на офис на куриер");
+		});
 	});
 
 	function submitCustom() {
