@@ -1,5 +1,4 @@
-﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" action="https://script.google.com/macros/s/AKfycbyZJ56LgP01sS38v96EEcZVLlgse2PwewcCGOtpumHZNJAXjWY4/exec"
-      method="POST" style="height: 0px;" onsubmit="return validateForm();" >
+﻿<form id="js-purchase-form" class="animation-transition overflow-hidden" method="POST" style="height: 0px;" onsubmit="submitCustom()" >
 	    <div class="db pb4 w-100" style="margin-top: -20px;">
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Попълнете своите детайли:</span>
@@ -42,6 +41,36 @@
 </form>
 
 <script>
+	function submitCustom() {
+		e.preventDefault();
+
+		if (true == validateForm()) {
+			$.ajax({
+				type: "POST",
+				url: "https://script.google.com/macros/s/AKfycbyZJ56LgP01sS38v96EEcZVLlgse2PwewcCGOtpumHZNJAXjWY4/exec",
+				data: {
+					'delivery' : document.querySelector("input[name=delivery]:checked").value,
+					'courier' : document.querySelector("input[name=courier]:checked").value,
+					'quantity' : document.querySelector("input[name=quantity]").value,
+					'name' : document.querySelector("input[name=name]").value,
+					'city' : document.querySelector("input[name=city]").value,
+					'address' : document.querySelector("input[name=address]").value,
+					'email' : document.querySelector("input[name=email]").value,
+					'phone' : document.querySelector("input[name=phone]").value
+				},
+				success: function(result){
+					console.log('Success', result);
+					document.getElementById("thankyou_message").style.display = "block";
+				},
+				fail: function(e){
+					console.log('Error', e);
+				}		
+			});
+		}
+
+		return false;
+	}
+
     function validateForm() {
         if (document.getElementsByName("quantity")[0].value < 1 ||
                 document.getElementsByName("name")[0].value === '' ||
