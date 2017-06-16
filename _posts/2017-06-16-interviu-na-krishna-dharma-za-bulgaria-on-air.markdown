@@ -14,4 +14,4 @@ excerpt: Как да бъдем щастливи, когато спазваме 
 
 Какво още каза Кришна Дхарма в интервюто си за Bulgaria On Air, чуйте и вижте тук:
 
-<iframe width="100%" height="450" src="http://video2.ibg.bg/iframer/112309" frameborder="0" allowfullscreen></iframe>
+http://www.bgonair.bg/sutreshen-blok/2017-06-15/britanski-avtor-predstavya-epichno-proizvedenie-za-indiya-u-nas
