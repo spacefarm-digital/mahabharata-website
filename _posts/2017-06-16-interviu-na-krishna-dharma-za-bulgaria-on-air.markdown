@@ -1,6 +1,9 @@
 ---
 title: Интервю на Кришна Дхарма за Bulgaria ON AIR
 date: 2017-06-16 12:35:00 +03:00
+hero:
+  image: <iframe width="100%" height="450" src="http://video2.ibg.bg/iframer/112309"
+    frameborder="0" allowfullscreen></iframe>
 excerpt: Как да бъдем щастливи, когато спазваме вселенските закони – това е истинското
   послание на “Махабхарта”!, Кришна Дхарма в интервю за Bulgaria ON AIR
 ---
@@ -23,4 +26,4 @@ excerpt: Как да бъдем щастливи, когато спазваме 
 
 Какво още каза Кришна Дхарма в интервюто си за Bulgaria On Air, чуйте и вижте тук:
 
-<iframe width="640" height="360" src="http://video2.ibg.bg/iframer/112309" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="450" src="http://video2.ibg.bg/iframer/112309" frameborder="0" allowfullscreen></iframe>
