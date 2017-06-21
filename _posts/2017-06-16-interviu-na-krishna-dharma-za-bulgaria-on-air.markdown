@@ -1,6 +1,7 @@
 ---
 title: Интервю на Кришна Дхарма за Bulgaria ON AIR
 date: 2017-06-16 12:35:00 +03:00
+published: false
 hero:
   image: "/uploads/bgonair.jpg"
   description: Интервю на атвора на книгата Махабхарата разказана от Кришна Дхарма.
