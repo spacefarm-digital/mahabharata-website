@@ -12,5 +12,4 @@ excerpt: '"Тази книга е много важна, защото тя е п
 
 Всеки може да почерпи от "Махабхарата" много! Но ако се опитате да се задълбочите повече и да прилагате  знанието и учението, което "Махабхарата" носи, то колкото повече живеете с ценностите на "Махабхарта", толкова повече ще я разбирате!" – Кришна Дхарма за предаването "Добър ден с БНТ 2".
 
-<iframe src="https://player.vimeo.com/video/222572846" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\
-<p><a href="https://vimeo.com/222572846">Интервю с Кришна Дхарма за "Добър ден с БНТ 2"</a> </p>
+<iframe src="https://player.vimeo.com/video/222572846" width="100%" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
