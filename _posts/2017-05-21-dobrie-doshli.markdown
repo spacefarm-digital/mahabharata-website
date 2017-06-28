@@ -27,5 +27,3 @@ excerpt: |-
 · [Новини](http://www.mahabharata.bg/posts/) за предстоящи събития.
 
 **Поемете с нас към вълнуващия, величествен, възвишен и непреходен свят на “Махабхарата”!**
-
-<iframe src="https://drive.google.com/file/d/0B-YAvKlX2FSzU0FtRVR3eUlpeHM/preview" width="900" height="700"></iframe>
