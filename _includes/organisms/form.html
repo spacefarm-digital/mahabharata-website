@@ -36,10 +36,20 @@
         <!-- Disclaimer -->
         <p class="brown-4">Цената и времето за доставка зависят от вашето местоживеене. <a href="/delivery-info/" class="link" target="_blank">Цени на куриерски услуги</a>.</p>
 		<div class="flex justify-between items-center">
-            <button type="button" class="btn states-opacity" onclick="submitCustom()">Купете</button>			
+            <button type="button" class="btn states-opacity" onclick="submitCustom()">Купете</button>	
         </div>
     </div>
 </form>
+
+<!-- Add event to the button's click handler -->
+<script type="text/javascript">
+$( '#submitCustom()' ).click(function() {
+fbq('track', 'Purchase', {
+value: 36,
+currency: 'лв'
+});
+});
+</script>
 
 <script>
 	$( document ).ready(function() {
@@ -95,7 +105,7 @@
         return true;
     }
 </script>
- 
+
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
     <h3>Благодарим ви! <br />Поръчката ви е приета.<br /></h3>
@@ -107,3 +117,5 @@
   <!-- <script data-cfasync="false" type="text/javascript"
   src="/form-submission-handler.js"></script> -->
 <!-- END -->
+
+
