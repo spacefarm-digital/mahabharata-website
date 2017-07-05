@@ -38,7 +38,6 @@
 		<div class="flex justify-between items-center">
             <button id="Purchase" type="button" class="btn states-opacity" onclick="submitCustom()">Купете</button>	
 
-
         </div>
     </div>
 </form>
@@ -74,8 +73,7 @@
 					document.getElementById("js-purchase-form").style.display = "none";
 					document.getElementById("thankyou_message").style.display = "block";
 				},
-				
-				
+								
 				fail: function(e){
 					console.log('Error', e);
 				}		
@@ -116,9 +114,11 @@
 <script type="text/javascript">
 $( '#Purchase' ).click(function() {
 fbq('track', 'Purchase', {
+content_ids: ['01'],
+content_type: 'book',
 value: 36,
-currency: 'лв'
+currency: 'BGN'
+});
 });
 </script>
-
 
