@@ -87,7 +87,6 @@ layout: default
         </section>
 
     </div>
-	<!-- Facebook Pixel Code -->
 
 <script>
     const openFormButton = document.querySelector('#js-open-form');
@@ -101,6 +100,11 @@ layout: default
 
 </script>
 
-<script>
-fbq('track', 'InitiateCheckout');
+<!-- Add event to the button's click handler -->
+<script type="text/javascript">
+$( '#js-open-form' ).click(function() {
+fbq('track', 'InitiateCheckout', {
+});
+});
 </script>
+
