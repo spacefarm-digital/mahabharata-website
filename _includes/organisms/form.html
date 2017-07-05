@@ -73,6 +73,7 @@
 					//console.log('Success', result);
 					document.getElementById("js-purchase-form").style.display = "none";
 					document.getElementById("thankyou_message").style.display = "block";
+					
 				},
 				fail: function(e){
 					console.log('Error', e);
@@ -111,10 +112,12 @@
 <!-- END -->
 
 <!-- Add event to the button's click handler -->
+
 <script type="text/javascript">
-$( '#Purchase' ).click(function() {
+$( '#thankyou_message' ).document.getElementById(function() {
 fbq('track', 'Purchase', {
-});
+value: 36,
+currency: 'BGN'
 });
 </script>
 
