@@ -43,14 +43,6 @@
     </div>
 </form>
 
-<!-- Add event to the button's click handler -->
-<script type="text/javascript">
-$( '#Purchase' ).click(function() {
-fbq('track', 'Purchase', {
-});
-});
-</script>
-
 <script>
 	$( document ).ready(function() {
 		$("#form-delivery-address-home").on('change', function () {
@@ -118,4 +110,11 @@ fbq('track', 'Purchase', {
   src="/form-submission-handler.js"></script> -->
 <!-- END -->
 
+<!-- Add event to the button's click handler -->
+<script type="text/javascript">
+$( '#Purchase' ).click(function() {
+fbq('track', 'Purchase', {
+});
+});
+</script>
 
