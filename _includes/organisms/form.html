@@ -73,7 +73,7 @@
 					//console.log('Success', result);
 					document.getElementById("js-purchase-form").style.display = "none";
 					document.getElementById("thankyou_message").style.display = "block";
-					
+					trackConversionEvent('36', 'лв');
 				},
 				fail: function(e){
 					console.log('Error', e);
@@ -113,11 +113,13 @@
 
 <!-- Add event to the button's click handler -->
 
-<script type="text/javascript">
-$( '#thankyou_message' ).document.getElementById(function() {
-fbq('track', 'Purchase', {
-value: 36,
-currency: 'BGN'
-});
+<script>
+ function trackConversionEvent(val, cny) {
+ var cd = {};
+ cd.value = val;
+ cd.currency = cny;
+ _fbq.push(['track', '115872379024563', cd]);
+ _fbq.push(['track', '115872379024563', cd]);
+ }
 </script>
 
