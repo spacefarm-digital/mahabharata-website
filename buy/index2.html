@@ -1,0 +1,36 @@
+---
+title: Рецензии
+layout: default
+---
+
+<div class="ph4 center">
+    <div class="mw7 center">
+        <!-- Page title -->
+        {% include atoms/heading.html level="1" size="1" text=page.title className="tc
+        mb4" %}
+
+        <div class="mw6 center">
+             <section>
+                <!-- Subsection title -->
+                {% include atoms/heading.html text="За “Махабхарата” разказана от Кришна Дхарма" level="2" size="3" className="f2-md mb4" %}
+                <!-- Loop -->
+                {% for review in site.reviews %}
+                    {% if review.categories contains 'retelling' %}
+                        {% include molecules/blockquote.html text=review.content source=review.source className="mb4 divided-bottom-fancy no-last-border pb4" size="f5" %}
+                    {% endif %}
+                {% endfor %}
+            </section>
+
+            <section>
+                <!-- Subsection title -->
+                {% include atoms/heading.html text="За “Махабхарата”" level="2" size="3" className="f2-md mb4" %}
+                <!-- Loop -->
+                {% for review in site.reviews %}
+                    {% if review.categories contains 'original' %}
+                        {% include molecules/blockquote.html text=review.content source=review.source className="mb4 divided-bottom-fancy no-last-border pb4" size="f5" %}
+                    {% endif %}
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</div>
