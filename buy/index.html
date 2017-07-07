@@ -10,7 +10,20 @@ layout: default
         {% include atoms/heading.html level="1" size="1" text=page.title className="tc mb4"
         %}
 
-        <section>
+		<section class="pv4 row">
+            <!-- Buy online -->
+			<div class="row divided-bottom-fancy pb4">
+				<div class="col-12 col-md-6 cms mb3 mb0-md">
+					<p>Можете да закупите “Махабхарата” разказана от Кришна Дхарма с {% raw %} 20% {% endraw %} отстъпка тук:</p>
+					<button id="js-open-form" class="btn states-opacity">Поръчайте</button>
+
+					<!-- Purchase form -->
+					{% include organisms/form.html %}
+				</div>
+			</div>
+		</section>
+
+		<section>
             <!-- Section title -->
             <div class="row divided-bottom-fancy pb4">
                 <div class="col-12 col-sm-5 col-md-4 col-lg-3 mb3 mb0-sm">
@@ -43,26 +56,10 @@ layout: default
                 </div>
             </div>
         </section>
+	</div>	
 
-        <section class="pv4 row">
-            
-            <!-- Buy online -->
-            <div class="col-12 col-md-6 cms mb3 mb0-md">
-                {% include atoms/heading.html level="2" size="3" text="Купете онлайн" className="
-                mb2" %}
-                <p>Можете да закупите “Махабхарата” разказана от Кришна Дхарма с {% raw %} 20% {% endraw %} отстъпка тук:</p>
-                <button id="js-open-form" class="btn states-opacity">Поръчайте</button>
-
-                <!-- Purchase form -->
-                {% include organisms/form.html %}
-            </div>
-        </section>
-
-    </div>
-	
-	
-	
-	<script>
+<!-- Add event to opening page -->	
+<script>
 fbq('track', 'ViewContent', {
 });
 </script>
