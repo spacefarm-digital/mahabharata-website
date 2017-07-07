@@ -8,9 +8,9 @@ layout: default
         <!-- Page title -->
         {% include atoms/heading.html level="1" size="1" text=page.title className="tc mb4"
         %}
-		<section>
+		<section class="pv4 row">
             <!-- Buy online -->
-			<div class="row divided-bottom-fancy pb4">
+			<!--<div class="row divided-bottom-fancy pb4">-->
 				<div class="col-12 col-md-8 cms mb3 mb0-md">
 				{% include atoms/heading.html level="2" size="3" text="Онлайн" className="
                 mb2" %}
@@ -21,8 +21,18 @@ layout: default
 					<!-- Purchase form -->
 					{% include organisms/form.html %}
 				</div>
-			</div>
+			<!--</div>-->
 			
+		</section>
+		
+		<section class="pv4 row">
+            <!-- Buy in stores -->
+            <div class="col-12 col-md-8 cms mb3 mb0-md">
+                {% include atoms/heading.html level="2" text="В книжарниците" className="
+                mb2" %}
+    
+                <p class="mb2">“Махабхарата” разказана от Кришна Дхарма можете да намерите в книжарници Хеликон, Bookpoint, Orange center, Booktrading и др.</p>                                    
+            </div>
 		</section>
 
 		<section class="pv4 row">
@@ -60,15 +70,7 @@ layout: default
             
         </section>
 		
-		<section class="pv4 row">
-            <!-- Buy in stores -->
-            <div class="col-12 col-md-8 cms mb3 mb0-md">
-                {% include atoms/heading.html level="2" text="В книжарниците" className="
-                mb2" %}
-    
-                <p class="mb2">“Махабхарата” разказана от Кришна Дхарма можете да намерите в книжарници Хеликон, Bookpoint, Orange center, Booktrading и др.</p>                                    
-            </div>
-		</section>				
+						
 	</div>	
 
 <!-- Add event to opening page -->	
