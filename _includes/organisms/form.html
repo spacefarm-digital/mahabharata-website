@@ -21,7 +21,7 @@
         <span class="db mb0 brown-4 mr2">Количество:</span>
         {% include atoms/stepper.html min="1" max="20" label="Количество" name="quantity" value="1" %}
     </div>
-    {% include atoms/input.html label="Име" name="name" className="mb2" %}
+    {% include atoms/input.html label="Име и фамилия" name="name" className="mb2" %}
 
     {% include atoms/input.html label="Град" name="city" type="city" className="mb2" %}
 
@@ -35,8 +35,9 @@
 
         <!-- Disclaimer -->
         <p class="brown-4"><a href="/delivery-info/" class="link" target="_blank">Цената</a> и времето за доставка зависят от вашето местоживеене.</p>
+		<br>
 		<div class="flex justify-between items-center">
-		
+		</br>
             <button id="Purchase" type="button" class="btn states-opacity" onclick="submitCustom()"><strong>Купете</strong></button>	
 
         </div>
