@@ -37,7 +37,7 @@
 		<!-- Push once! -->
         <p class="brown-4">Натиснете бутона Купи веднъж и изчакайте потвърждение.</p>
 		<div class="flex justify-between items-center">
-            <button id="Purchase" type="button" class="btn states-opacity" onclick="submitCustom()"><strong>Купи</strong></button>	
+            <button id="AddPaymentInfo" type="button" class="btn states-opacity" onclick="submitCustom()"><strong>Купи</strong></button>	
 
         </div>
     </div>
@@ -70,8 +70,12 @@
 					'phone' : document.querySelector("input[name=phone]").value
 				},
 				success: function(result){
+					fbq('track', 'Purchase', {
+					value: 36,
+					currency: 'USD'
+                });
 					//console.log('Success', result);
-					document.getElementById("js-purchase-form").style.display = "none";
+					document.getElementById("js-purchase-form").style.display = "none";				
 					document.getElementById("thankyou_message").style.display = "block";
 				},
 								
@@ -114,9 +118,7 @@
 <!-- Add event to the button's click handler -->
 <script type="text/javascript">
 $( '#Purchase' ).click(function() {
-fbq('track', 'Purchase', {
-value: 36,
-currency: 'BGN'
+fbq('track', 'AddPaymentInfo', {
 });
 });
 </script>
