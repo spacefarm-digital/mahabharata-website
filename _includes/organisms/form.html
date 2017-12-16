@@ -5,8 +5,8 @@
         <!-- Title -->
         <span class="f4 lh-title mb3 db">Моля, попълнете всички полета:</span>
 		<!-- Disclaimer -->
-        <p class="brown-4"><a href="/delivery-info/" class="link" target="_blank">Цената</a> и времето за доставка зависят от вашето местоживеене.</p>
-        <p class="mb2 brown-4">Вид доставка:</p>
+        
+		<p class="mb2 brown-4">Вид доставка:</p>
         {% include atoms/checkbox.html label="Доставка до адрес" type="radio" className="mb3"
         id="form-delivery-address-home" name="delivery" value="Доставка до адрес" %}
         {% include atoms/checkbox.html label="Доставка до офис на куриер" type="radio" className="mb2"
@@ -33,7 +33,9 @@
 
     {% include atoms/input.html label="Телефон" name="phone" type="phone" className="mb3" %}
 
-    <div class="mb3">		
+    <div class="mb3">
+        <p class="brown-4">Времето и <a href="/delivery-info/" class="link" target="_blank">цената</a> за доставка зависят от вашето местоживеене.</p>	
+		
 		<!-- Push once! -->
         <p class="brown-4">Моля, натиснете бутона Купи само веднъж и изчакайте.</p>
 		<div class="flex justify-between items-center">
