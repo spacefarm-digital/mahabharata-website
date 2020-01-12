@@ -1,6 +1,6 @@
 ---
 title: R India Today
-date: 2017-05-02 11:49:00 Z
+date: 2017-05-02 14:49:00 +03:00
 categories:
 - retelling
 position: 2

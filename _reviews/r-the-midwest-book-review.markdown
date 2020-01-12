@@ -1,6 +1,6 @@
 ---
 title: R The Midwest Book Review
-date: 2017-05-02 11:48:00 Z
+date: 2017-05-02 14:48:00 +03:00
 categories:
 - retelling
 position: 7

@@ -1,6 +1,6 @@
 ---
 title: M Vivekananda
-date: 2017-05-02 11:51:00 Z
+date: 2017-05-02 14:51:00 +03:00
 categories:
 - original
 position: 3

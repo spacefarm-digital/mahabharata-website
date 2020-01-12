@@ -1,6 +1,6 @@
 ---
 title: R Joseph Ray
-date: 2017-05-02 11:47:00 Z
+date: 2017-05-02 14:47:00 +03:00
 categories:
 - retelling
 position: 0
